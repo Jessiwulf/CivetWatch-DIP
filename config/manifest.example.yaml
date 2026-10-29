@@ -1,0 +1,28 @@
+# One observation day: which video belongs to which camera / room.
+# Paths are relative to this file.
+date: 2026-07-20
+start: "2026-07-20 15:00:00"     # optional: analyse only this window
+end: "2026-07-21 15:00:00"
+
+cameras:
+  - id: cam1
+    room: R1
+    zones: zones/cam1.json        # drawn with `civetwatch zones` or imported from CVAT
+    clock_offset_s: 0             # + if this camera's clock runs ahead of true time
+    files: videos/cam1/*.mp4      # glob; start times are read from names like cam1_20260720_150000.mp4
+  - id: cam2
+    room: R2
+    zones: zones/cam2.json
+    clock_offset_s: 0
+    files:                        # or list files with explicit start times
+      - {path: videos/cam2/export_part1.mp4, start: "2026-07-20 15:00:00"}
+      - {path: videos/cam2/export_part2.mp4}    # no start: follows the previous file
+  - id: cam3
+    room: R3
+    zones: zones/cam3.json
+    files: videos/cam3/*.mp4
+  - id: cam4
+    room: R4
+    zones: zones/cam4.json
+    background: backgrounds/cam4_empty.jpg      # optional empty-room picture for the motion fallback
+    files: videos/cam4/*.mp4

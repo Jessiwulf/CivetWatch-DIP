@@ -1,0 +1,15 @@
+# CivetWatch - Python 3.10+
+numpy
+pandas
+opencv-python
+matplotlib
+openpyxl
+pyyaml
+flask
+ultralytics        # YOLO26 detector / pose + ByteTrack
+lap                # ByteTrack assignment
+torch              # GRU sequence model (install the CUDA build for the NVIDIA GPU)
+imageio-ffmpeg     # FFmpeg binary for `civetwatch prepare`
+transformers       # ready-made animal pose model (ViTPose+)
+bitsandbytes       # 4-bit vision-language model for the short-stop pre-filter
+accelerate

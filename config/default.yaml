@@ -1,0 +1,147 @@
+# CivetWatch settings. Every threshold from the Phase 1 design lives here,
+# so keepers / students can tune them without touching code.
+
+civet_name: "Civet #1"
+
+resources:
+  profile: laptop             # laptop = keep the PC cool and usable (default) | full = no limits
+  # Uncomment to override a profile value (laptop values shown):
+  # threads: 4                # CPU threads for OpenCV / NumPy / PyTorch / FFmpeg (0 = all)
+  # priority: below_normal    # Windows priority, so the PC stays responsive
+  # duty_cycle: 0.7           # work 70 % of the time, idle 30 % so the CPU can cool down
+  # gpu_temp_pause: 78        # pause when the GPU reaches this temperature (C) ...
+  # gpu_temp_resume: 68       # ... and carry on once it is below this
+  # chunk_min: 60             # long runs save every hour: a crash only loses the current hour
+  # train_epoch_pause_s: 20   # rest between training epochs
+  # train_batch: 8
+  # train_workers: 1
+recorder: "CivetWatch (auto)"
+
+sampling:
+  fps: 2                      # frames kept per real second (slide 12)
+  process_width: 960          # frames are resized to this width before analysis
+
+preprocess:
+  night_colorfulness_max: 8   # colour variation below this = infrared (night) frame, even if tinted pink
+  clahe_clip: 3.0             # OpenCV CLAHE contrast boost for night frames
+  clahe_grid: 8
+  denoise: nlm                # nlm (Non-Local Means, ~40 ms/frame) | bilateral (~2 ms, for long days on a slow PC) | none
+  denoise_strength: 7
+  nlm_template: 5
+  nlm_search: 11
+  blur_min: 25.0              # Laplacian variance below this = blurry -> 'poor image'
+  dark_max: 12                # mean brightness below this (after boost) -> 'poor image'
+  frozen_diff_max: 0.15       # mean abs diff to previous frame below this = identical frame
+  frozen_min_s: 5             # identical frames for this long = frozen / dropped video
+
+detector:
+  type: auto                  # auto | yolo | motion
+  weights: models/civet_det.pt          # YOLO26 retrained on zoo frames
+  conf: 0.35
+  # class name in the weights -> CivetWatch class. COCO weights can be used to
+  # bootstrap by mapping e.g. cat/dog -> civet, bowl -> food.
+  class_map:
+    civet: civet
+    food_tray: food
+    water_tray: water
+  tracker: bytetrack.yaml
+  motion:                     # fallback when no trained weights exist
+    min_area_frac: 0.002
+    max_area_frac: 0.25
+    diff_threshold: 15        # minimum grey-level difference; raised automatically on noisy frames
+    background_samples: 60
+
+pose:
+  enabled: auto               # auto | false
+  type: auto                  # auto = our YOLO26-Pose if models/civet_pose.pt exists, else ready-made ViTPose+
+  weights: models/civet_pose.pt
+  vitpose_model: usyd-community/vitpose-plus-base   # downloaded once (500 MB), then works offline
+  vitpose_head: 3             # 3 = AP-10K animal head
+  conf: 0.3
+  kp_conf: 0.4                # drop single points below this score
+  min_mean: 0.45              # drop the whole pose when the model is this unsure (blur, fast motion)
+
+tracking:
+  switch_margin: 0.15         # another camera must beat the current one by this much to take over
+
+behavior:
+  walk_speed: 0.10            # body lengths / second above which the civet is walking (calibrated on 5 Apr 2026)
+  still_speed: 0.08           # below this the body box counts as still
+  still_motion: 0.04          # changed-pixel fraction inside the box below this = barely moving
+  groom_motion: 0.06          # inside-box motion above this while the box is still = grooming/chewing
+  groom_without_pose: false   # box motion alone cannot tell grooming from drinking/sniffing on real video
+  tray_overlap: 0.15          # without pose: share of the civet box over the FOOD/WATER zone
+  head_down: null             # nose below withers (side view only; the zoo cameras look down, so off)
+  groom_nose_body: 0.45       # grooming: nose within this many body lengths of the hips
+  pose_rare_rules: false      # grooming / marking / toileting from body points: off, the ready-made pose
+                              # model mixes up head and tail seen from above (tested 5 Apr 2026) - these
+                              # behaviors come from the short-stop finder + check instead
+  tail_up: 0.25               # tail tip above tail base by this fraction of body length
+  hip_drop: 0.10
+  rest_box_enter: 0.10        # civet vanishes with this much of its box over the REST-BOX zone -> 'Sleep in a box'
+  curl_compactness: 0.70      # body length / typical body length below this = curled ball
+  stretch_compactness: 1.10
+  stretch_aspect: 2.3         # long / short side of the body outline above this = stretched out
+  vote_window: 6              # frames in the majority vote (3 s at 2 fps)
+  gru_window: 8               # frames the GRU reads (4 s at 2 fps)
+  gru_weights: models/civet_gru.pt
+  gru_min_prob: 0.6
+  defecation_min_s: 5         # a toileting stop in the latrine this long or longer = defecation
+  bout_filter:                # walking past the bowl is not eating / drinking (checked on 5 Apr 2026)
+    feeding: {max_travel: 0.5}               # box moves < 0.5 body lengths during the bout
+    drinking: {max_travel: 0.5, min_pose: 0.5}   # ... and the nose point is at the basin half the time
+  max_duration_s:             # longer than this cannot be the behavior -> back to rest / active
+    territorial_marking: 20
+    urination: 30
+    defecation: 120
+    grooming: 900
+  min_duration_s:             # a clue must stay true this long before the behavior is written
+    feeding: 3
+    drinking: 2
+    grooming: 2
+    territorial_marking: 1
+    urination: 2
+    defecation: 5
+  bout_gap_s:                 # pauses shorter than this stay in the same bout
+    feeding: 60               # (5 Apr 2026: the civet often looks up and goes back within a minute)
+    drinking: 60
+    grooming: 30
+    territorial_marking: 5
+    urination: 5
+    defecation: 10
+
+stops:                        # short stops = possible toileting / marking / grooming (see civetwatch/stops.py)
+  enabled: true
+  min_s: 4                    # the civet stands still this long ...
+  max_s: 60                   # ... but not longer (longer = resting)
+  still_speed: 0.08           # box centre moves less than this (body lengths / s, over 2 s) = standing still
+  walk_speed: 0.15            # ... and more than this within moving_within_s before and after = walking
+  doorway_overlap: 0.1        # a stop on a DOOR zone ...
+  doorway_switch_s: 4         # ... with another camera seeing the civet within 4 s = passing through, not flagged
+  count_room_changes: true    # arriving from / leaving to another room counts as walking: finds stops right
+                              # after the civet enters a room (~160 stops / day on 5 Apr 2026, 3 of 3 known
+                              # events); false = ~65 stops / day but those stops are missed
+  moving_within_s: 8          # and walks within this many seconds before and after
+  vlm: false                  # vision-language pre-filter: OFF. Tested on 5 Apr 2026 it was guessing (it gave
+                              # the same answer whatever the picture when the options were reordered), so every
+                              # stop is shown to a person instead (dashboard -> Quick check)
+  vlm_model: Qwen/Qwen2.5-VL-3B-Instruct   # only used with vlm: true (7.5 GB download)
+  order_model: models/civet_behavior_cls.pt  # sorts Quick check, likely toileting first (trained on public MammalNet clips)
+
+postprocess:
+  min_state_s: 60             # 1-minute rule: Inactive/Active only switch after >= 1 min
+  hold_max_s: 60              # out of view / poor image shorter than this keeps the last state; longer = 'Not visible'
+  not_visible_min_s: 10       # no civet in any camera this long -> 'Not visible' row
+  not_visible_merge_s: 5
+
+report:
+  sheet_start_hour: 15        # first row of the hourly frequency table (active period start)
+  review_conf: 0.75           # events below this confidence go to the keeper review list
+  always_review: [territorial_marking, urination, defecation]   # rare, quick behaviors
+  clip_pad_s: 3
+  max_clips: 50
+  alerts:
+    - {behavior: feeding, after: "22:00", message: "No feeding after 22:00, please check"}
+    - {behavior: drinking, after: "15:00", message: "No drinking recorded, please check"}
+  not_visible_alert_min: 60
+  poor_image_alert_frac: 0.2
