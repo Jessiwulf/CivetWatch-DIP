@@ -46,6 +46,15 @@ _TS_PATTERNS = [
     (re.compile(r"(\d{4})-(\d{2})-(\d{2})[_\-T ](\d{2})(?!\d)"), None),
 ]
 
+# Common recorder prefixes: A01_20260405000000.mp4, cam2-..., camera 3 ...
+_CAMERA_PATTERN = re.compile(r"(?:^|[_\-\s])(?:cam(?:era)?|a)\s*0?([1-8])(?=$|[_\-\s.])", re.IGNORECASE)
+
+
+def camera_from_filename(path):
+    """Return CivetWatch's camera id encoded in a recorder file name, if any."""
+    match = _CAMERA_PATTERN.search(os.path.splitext(os.path.basename(path))[0])
+    return f"cam{int(match.group(1))}" if match else None
+
 
 def timestamp_from_filename(path):
     name = os.path.basename(path)

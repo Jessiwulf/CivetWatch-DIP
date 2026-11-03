@@ -99,9 +99,23 @@ VIDEO_EXT = (".mp4", ".avi", ".mkv", ".mov", ".dav", ".h264", ".ts", ".m4v")
 
 
 def find_videos(folder):
+    if isinstance(folder, (list, tuple)):
+        return sorted(p for p in folder if isinstance(p, str) and os.path.isfile(p)
+                      and p.lower().endswith(VIDEO_EXT))
     if not folder or not os.path.isdir(folder):
         return []
     return sorted(p for p in glob.glob(os.path.join(folder, "*")) if p.lower().endswith(VIDEO_EXT))
+
+
+def group_videos_by_camera(folder):
+    """Group a flat folder's recorder files by the camera prefix in their names."""
+    from .config import camera_from_filename
+    groups = {}
+    for path in find_videos(folder):
+        camera = camera_from_filename(path)
+        if camera:
+            groups.setdefault(camera, []).append(path)
+    return groups
 
 
 def estimate(cam_folders, prepared=False):
@@ -111,6 +125,8 @@ def estimate(cam_folders, prepared=False):
     for cid, folder in cam_folders.items():
         files = find_videos(folder)
         h = sum(video_hours(f) for f in files)
+        if isinstance(folder, (list, tuple)):
+            folder = os.path.commonpath([os.path.dirname(path) for path in files]) if files else "auto-detected file names"
         cams[cid] = {"folder": folder, "files": len(files), "hours": round(h, 2)}
         total_h += h
         span_h = max(span_h, h)

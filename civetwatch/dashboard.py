@@ -160,8 +160,9 @@ The videos stay where they are; a small 2-frames-per-second copy is made in <cod
 <p><b>2 · Where are the videos?</b></p>
 <div class="chips" id="mode"><button class="on" data-m="folder">A folder on this computer (recommended)</button><button data-m="upload">Upload video files</button></div>
 <div id="m-folder">
-<p class="m">One folder with a sub-folder per camera ("camera 1" ... "camera 4"), or type each camera's folder.</p>
+<p class="m">Paste one folder: CivetWatch recognises camera sub-folders, or splits a flat folder from file names such as <code>A01_20260405000000.mp4</code> through <code>A04_...</code>.</p>
 <p><input type="text" id="source" style="width:min(640px,100%)" placeholder="e.g. D:\CMU_Work\Image processing\ชะมดแผงสันหางดำ" value="{{ last_source }}"></p>
+<p class="m" id="autofill" aria-live="polite"></p>
 <details><summary class="m">or one folder per camera</summary>{% for i in range(1,5) %}
 <p>Camera {{ i }} <input type="text" id="cam{{ i }}" style="width:min(560px,90%)"></p>{% endfor %}</details>
 </div>
@@ -181,6 +182,17 @@ document.querySelectorAll('#mode button').forEach(b=>b.onclick=()=>{mode=b.datas
   document.getElementById('m-upload').style.display=mode==='upload'?'':'none';});
 function body(){const b={date:document.getElementById('date').value,source:document.getElementById('source').value.trim(),cams:{}};
   for(let i=1;i<=4;i++){const v=document.getElementById('cam'+i).value.trim();if(v)b.cams['cam'+i]=v;}return b;}
+async function scanSource(){const source=document.getElementById('source').value.trim(),note=document.getElementById('autofill');
+  if(!source){note.textContent='';return;}
+  note.textContent='Reading video file names ...';
+  try{const r=await fetch("{{ url_for('api_footage_metadata') }}",{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({source})}),m=await r.json();
+    if(!r.ok){note.textContent=m.error||'Could not read this folder.';return;}
+    if(m.date&&!document.getElementById('date').dataset.touched)document.getElementById('date').value=m.date;
+    const cams=Object.entries(m.cameras).map(([camera,info])=>`${camera.replace('cam','Camera ')}: ${info.files} video${info.files===1?'':'s'}`).join(' · ');
+    note.textContent=`Detected ${cams}${m.date?' · date '+m.date:''}.`;
+  }catch(e){note.textContent='Could not read this folder.';}}
+document.getElementById('source').addEventListener('change',scanSource);
+document.getElementById('source').addEventListener('blur',scanSource);
 async function upload(){const date=document.getElementById('date').value;let files=[];
   for(let i=1;i<=4;i++)for(const f of document.getElementById('up'+i).files)files.push(['cam'+i,f]);
   if(!files.length){alert('Pick the video files first');return null;}
@@ -817,7 +829,8 @@ def create_app(root, cfg):
             if os.path.exists(p):
                 src = json.load(open(p, encoding="utf-8")).get("sources", {})
                 if src:
-                    last = os.path.dirname(list(src.values())[0])
+                    first = list(src.values())[0]
+                    last = os.path.dirname(first[0]) if isinstance(first, list) and first else os.path.dirname(first)
                     break
         if not last:
             guess = os.path.join(os.path.dirname(os.path.dirname(PROJECT_ROOT)), "ชะมดแผงสันหางดำ")
@@ -1112,9 +1125,25 @@ def create_app(root, cfg):
                 digits = "".join(ch for ch in name if ch.isdigit())
                 if os.path.isdir(os.path.join(src, name)) and digits:
                     cams[f"cam{int(digits)}"] = os.path.join(src, name)
-            if not cams and jobs.find_videos(src):
-                cams["cam1"] = src
+            if not cams:
+                cams = jobs.group_videos_by_camera(src)
         return cams
+
+    def _footage_metadata(cams):
+        from .config import timestamp_from_filename
+        starts = [timestamp_from_filename(f) for source in cams.values() for f in jobs.find_videos(source)]
+        starts = [t for t in starts if t]
+        date = f"{pd.Series(starts).dt.date.mode().iloc[0]:%Y-%m-%d}" if starts else ""
+        return date, starts
+
+    @app.route("/api/footage-metadata", methods=["POST"])
+    def api_footage_metadata():
+        cams = _folders(request.get_json(force=True))
+        if not cams:
+            return jsonify(error="No camera names found. Use camera sub-folders or file names like A01_20260405000000.mp4."), 400
+        date, _ = _footage_metadata(cams)
+        return jsonify(date=date, cameras={camera: {"files": len(jobs.find_videos(source))}
+                                            for camera, source in cams.items()})
 
     @app.route("/api/estimate", methods=["POST"])
     def api_estimate():
@@ -1124,12 +1153,8 @@ def create_app(root, cfg):
             return jsonify(error="No camera folders found. Give a folder with 'camera 1' ... 'camera 4' inside, "
                                  "or each camera's folder."), 400
         est = jobs.estimate(cams)
-        from .config import timestamp_from_filename
-        starts = [timestamp_from_filename(f) for c in cams.values() for f in jobs.find_videos(c)]
-        starts = [t for t in starts if t]
-        date = body.get("date") or (f"{min(starts):%Y-%m-%d}" if starts else "")
-        if starts:
-            date = f"{pd.Series(starts).dt.date.mode().iloc[0]:%Y-%m-%d}"
+        inferred_date, starts = _footage_metadata(cams)
+        date = inferred_date or body.get("date") or ""
         free = shutil.disk_usage(PROJECT_ROOT).free / 1e9
         warn = []
         if est["camera_hours"] == 0:
@@ -1158,8 +1183,12 @@ def create_app(root, cfg):
             return jsonify(error="Folders and date are needed"), 400
         est = jobs.estimate(cams)
         args = ["process", "--date", date]
-        for k, v in cams.items():
-            args += [f"--{k}", v]
+        source = (body.get("source") or "").strip().strip('"')
+        if source and not (body.get("cams") or {}):
+            args += ["--source", source]
+        else:
+            for k, v in cams.items():
+                args += [f"--{k}", v]
         return _start("process", f"Process {date}", args, date, est["total_s"])
 
     @app.route("/api/upload/<date>/<cam>/<name>", methods=["PUT"])

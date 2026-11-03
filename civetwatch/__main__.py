@@ -173,7 +173,7 @@ def cmd_spotcheck_report(a, cfg):
 
 
 def cmd_process(a, cfg):
-    from . import process
+    from . import jobs, process
     folders = {f"cam{i}": getattr(a, f"cam{i}") for i in range(1, 9) if getattr(a, f"cam{i}", None)}
     if a.source and not folders:
         import glob
@@ -181,8 +181,10 @@ def cmd_process(a, cfg):
             digits = "".join(ch for ch in os.path.basename(d) if ch.isdigit())
             if os.path.isdir(d) and digits:
                 folders[f"cam{int(digits)}"] = d
+        if not folders:
+            folders = jobs.group_videos_by_camera(a.source)
     if not folders:
-        raise SystemExit("Give --cam1 ... --cam4 folders, or --source with 'camera 1' ... 'camera 4' sub-folders")
+        raise SystemExit("Give --cam1 ... --cam4 folders, or --source with camera sub-folders or names like A01_20260405000000.mp4")
     process.process_day(a.date, folders, cfg, out=a.out)
 
 
