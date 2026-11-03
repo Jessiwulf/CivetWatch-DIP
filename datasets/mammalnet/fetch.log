@@ -1,0 +1,57 @@
+590 clips to fetch: {'grooming': 206, 'toileting': 164, 'other': 220}
+1/590  downloaded 1  unavailable 0
+21/590  downloaded 20  unavailable 1
+590 clips to fetch: {'grooming': 206, 'toileting': 164, 'other': 220}
+41/590  downloaded 40  unavailable 0
+61/590  downloaded 60  unavailable 0
+81/590  downloaded 77  unavailable 3
+590 clips to fetch: {'grooming': 206, 'toileting': 164, 'other': 220}
+96 already done, 494 to fetch (3 at a time)
+20/494  downloaded 18  unavailable 2
+40/494  downloaded 37  unavailable 3
+60/494  downloaded 55  unavailable 5
+80/494  downloaded 71  unavailable 9
+100/494  downloaded 90  unavailable 10
+120/494  downloaded 109  unavailable 11
+140/494  downloaded 123  unavailable 17
+160/494  downloaded 140  unavailable 20
+180/494  downloaded 159  unavailable 21
+200/494  downloaded 176  unavailable 24
+220/494  downloaded 192  unavailable 28
+240/494  downloaded 210  unavailable 30
+260/494  downloaded 220  unavailable 40
+280/494  downloaded 220  unavailable 60
+300/494  downloaded 228  unavailable 72
+320/494  downloaded 228  unavailable 92
+340/494  downloaded 228  unavailable 112
+360/494  downloaded 228  unavailable 132
+380/494  downloaded 228  unavailable 152
+400/494  downloaded 228  unavailable 172
+420/494  downloaded 228  unavailable 192
+440/494  downloaded 228  unavailable 212
+460/494  downloaded 228  unavailable 232
+480/494  downloaded 228  unavailable 252
+--- retry pass (1 at a time, 4 s pause)
+590 clips to fetch: {'grooming': 206, 'toileting': 164, 'other': 220}
+315 already done, 275 to fetch (3 at a time)
+20/275  downloaded 0  unavailable 20
+40/275  downloaded 0  unavailable 40
+60/275  downloaded 17  unavailable 43
+80/275  downloaded 33  unavailable 47
+100/275  downloaded 49  unavailable 51
+120/275  downloaded 65  unavailable 55
+140/275  downloaded 80  unavailable 60
+160/275  downloaded 97  unavailable 63
+180/275  downloaded 112  unavailable 68
+200/275  downloaded 128  unavailable 72
+220/275  downloaded 144  unavailable 76
+240/275  downloaded 160  unavailable 80
+260/275  downloaded 176  unavailable 84
+done: 187 clips, 88 unavailable
+590 clips to fetch: {'grooming': 206, 'toileting': 164, 'other': 220}
+502 already done, 88 to fetch (3 at a time)
+20/88  downloaded 0  unavailable 20
+40/88  downloaded 0  unavailable 40
+60/88  downloaded 0  unavailable 60
+80/88  downloaded 1  unavailable 79
+done: 1 clips, 87 unavailable

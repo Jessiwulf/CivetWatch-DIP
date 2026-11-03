@@ -1,0 +1,5 @@
+path: C:\CMU_Work\Image processing\DIP_CV-main\CivetWatch\datasets\civet_det_v2
+train: images/train
+val: images/val
+names:
+  0: civet

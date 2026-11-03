@@ -1,0 +1,12 @@
+drinks_water	0
+sleeps	1
+eats_food	2
+mates_with_other_animals	3
+nurses_or_breastfeeds_its_baby	4
+pees	5
+grooms/cleans_itself_or_other_animal	6
+poops	7
+fights_against_other_animals	8
+hunts_other_animals	9
+vomits	10
+gives_birth_to_a_baby	11
