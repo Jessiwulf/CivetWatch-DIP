@@ -25,6 +25,8 @@ def test_flat_folder_metadata_is_grouped_by_camera(tmp_path):
     response = client.post("/api/footage-metadata", json={"source": str(tmp_path)})
 
     assert b'id="autofill"' in page.data
+    assert b'id="upall"' in page.data
+    assert b'assignUploads' in page.data
     assert response.status_code == 200
     assert response.get_json() == {
         "date": "2026-04-05",

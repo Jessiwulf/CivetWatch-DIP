@@ -168,7 +168,9 @@ The videos stay where they are; a small 2-frames-per-second copy is made in <cod
 </div>
 <div id="m-upload" style="display:none">
 <p class="m">The files are copied into <code>data/&lt;date&gt;/upload</code> (needs free space for the full recordings). File names must contain the date and time, like <code>A01_20260405000000.mp4</code>.</p>
-{% for i in range(1,5) %}<p>Camera {{ i }} <input type="file" id="up{{ i }}" multiple accept="video/*"></p>{% endfor %}
+<p><b>Select all videos</b><br><input type="file" id="upall" multiple accept="video/*"> <span class="m" id="upallnote"></span></p>
+<p class="m">Files named <code>A01_...</code> through <code>A04_...</code> are placed into the matching camera automatically. You can still add files to a camera manually below.</p>
+{% for i in range(1,5) %}<p>Camera {{ i }} <input type="file" id="up{{ i }}" multiple accept="video/*"> <span class="m" id="up{{ i }}note"></span></p>{% endfor %}
 <div id="upbox" style="display:none"><div class="progress"><i id="upbar" style="width:0"></i></div><p class="m" id="uptxt"></p></div>
 </div>
 <p><button id="checkbtn" onclick="check()">Check footage and estimate time</button></p>
@@ -193,8 +195,21 @@ async function scanSource(){const source=document.getElementById('source').value
   }catch(e){note.textContent='Could not read this folder.';}}
 document.getElementById('source').addEventListener('change',scanSource);
 document.getElementById('source').addEventListener('blur',scanSource);
-async function upload(){const date=document.getElementById('date').value;let files=[];
-  for(let i=1;i<=4;i++)for(const f of document.getElementById('up'+i).files)files.push(['cam'+i,f]);
+let autoUploadFiles={};
+function uploadMeta(name){const cam=name.match(/(?:^|[_\-\s])(?:cam(?:era)?|a)\s*0?([1-8])(?=$|[_\-\s.])/i),compact=name.match(/(20\d{2})(\d{2})(\d{2})/),split=name.match(/(20\d{2})[-_](\d{2})[-_](\d{2})/);
+  const date=compact||split;return {cam:cam?'cam'+Number(cam[1]):'',date:date?`${date[1]}-${date[2]}-${date[3]}`:''};}
+function assignUploads(files){autoUploadFiles={};let unknown=[],dates=[];
+  for(const f of files){const meta=uploadMeta(f.name);if(!meta.cam){unknown.push(f.name);continue;}(autoUploadFiles[meta.cam]??=[]).push(f);if(meta.date)dates.push(meta.date);}
+  for(let i=1;i<=4;i++){const n=(autoUploadFiles['cam'+i]||[]).length;document.getElementById('up'+i+'note').textContent=n?`${n} file${n===1?'':'s'} added automatically`:'';}
+  const counts={};for(const date of dates)counts[date]=(counts[date]||0)+1;const date=Object.keys(counts).sort((a,b)=>counts[b]-counts[a])[0];
+  if(date&&!document.getElementById('date').dataset.touched)document.getElementById('date').value=date;
+  const added=Object.values(autoUploadFiles).reduce((n,files)=>n+files.length,0),note=document.getElementById('upallnote');
+  note.textContent=`${added} file${added===1?'':'s'} assigned automatically${date?' · date '+date:''}${unknown.length?' · '+unknown.length+' file(s) need a camera name':''}.`;}
+document.getElementById('upall').addEventListener('change',e=>assignUploads(e.target.files));
+async function upload(){const date=document.getElementById('date').value;let files=[],seen=new Set();
+  const add=(cam,f)=>{const key=`${f.name}:${f.size}:${f.lastModified}`;if(!seen.has(key)){seen.add(key);files.push([cam,f]);}};
+  for(const [cam,items] of Object.entries(autoUploadFiles))for(const f of items)add(cam,f);
+  for(let i=1;i<=4;i++)for(const f of document.getElementById('up'+i).files)add('cam'+i,f);
   if(!files.length){alert('Pick the video files first');return null;}
   const total=files.reduce((a,x)=>a+x[1].size,0);let sent=0;document.getElementById('upbox').style.display='';
   for(const [cam,f] of files){await new Promise((ok,bad)=>{const x=new XMLHttpRequest();
