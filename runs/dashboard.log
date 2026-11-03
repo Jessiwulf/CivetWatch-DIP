@@ -1,0 +1,12 @@
+CivetWatch dashboard: http://127.0.0.1:8050  (runs from C:\CMU_Work\Image processing\DIP_CV-main\CivetWatch\runs)
+ * Serving Flask app 'civetwatch.dashboard'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8050
+Press CTRL+C to quit
+127.0.0.1 - - [24/Oct/2026 18:25:18] "GET /run/demo/spotcheck?id=1 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2026 18:25:22] "GET /run/demo/spotcheck?id=1 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2026 18:25:22] "GET /run/demo/file/spotcheck/img/001.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2026 18:25:22] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [24/Oct/2026 18:25:26] "GET /run/demo/spotcheck/results HTTP/1.1" 200 -
+127.0.0.1 - - [24/Oct/2026 18:25:26] "GET /favicon.ico HTTP/1.1" 404 -

@@ -1,0 +1,22 @@
+{
+ "id": "job_20261103_082659",
+ "kind": "spotcheck",
+ "title": "Make spot check (2026-04-05)",
+ "day": "2026-04-05",
+ "args": [
+  "--config",
+  "data/2026-04-05/config.yaml",
+  "spotcheck",
+  "--run",
+  "runs/2026-04-05",
+  "--manifest",
+  "data/2026-04-05/manifest.yaml"
+ ],
+ "pid": 23684,
+ "started": 1793669219.610379,
+ "state": "done",
+ "log": "D:\\CMU_Work\\Image processing\\DIP_CV-main\\CivetWatch\\runs\\_jobs\\job_20261103_082659.log",
+ "status_file": "D:\\CMU_Work\\Image processing\\DIP_CV-main\\CivetWatch\\runs\\_jobs\\job_20261103_082659.status.json",
+ "estimate_s": 300,
+ "ended": 1793669263.6402867
+}

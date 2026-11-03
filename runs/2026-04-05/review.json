@@ -1,0 +1,2978 @@
+{
+ "2026-04-05 00:36:59|cam2|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 00:36:59",
+  "camera": "cam2",
+  "behavior": "possible_marking"
+ },
+ "2026-04-05 00:42:39|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 00:42:39",
+  "camera": "cam3",
+  "behavior": "feeding"
+ },
+ "2026-04-05 00:42:51|cam4|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 00:42:51",
+  "camera": "cam4",
+  "behavior": "drinking"
+ },
+ "2026-04-05 00:50:30|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 00:50:30",
+  "camera": "cam3",
+  "behavior": "feeding"
+ },
+ "2026-04-05 00:52:00|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 00:52:00",
+  "camera": "cam3",
+  "behavior": "feeding"
+ },
+ "2026-04-05 01:11:52|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 01:11:52",
+  "camera": "cam4",
+  "behavior": "drinking"
+ },
+ "2026-04-05 01:16:15|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 01:16:15",
+  "camera": "cam3",
+  "behavior": "feeding"
+ },
+ "2026-04-05 01:22:42|cam4|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 01:22:42",
+  "camera": "cam4",
+  "behavior": "drinking"
+ },
+ "2026-04-05 01:22:52|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 01:22:52",
+  "camera": "cam3",
+  "behavior": "feeding"
+ },
+ "2026-04-05 02:43:02|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 02:43:02",
+  "camera": "cam4",
+  "behavior": "drinking"
+ },
+ "2026-04-05 02:45:03|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 02:45:03",
+  "camera": "cam3",
+  "behavior": "feeding"
+ },
+ "2026-04-05 03:03:53|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 03:03:53",
+  "camera": "cam3",
+  "behavior": "feeding"
+ },
+ "2026-04-05 03:06:17|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 03:06:17",
+  "camera": "cam4",
+  "behavior": "drinking"
+ },
+ "2026-04-05 16:39:10|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 16:39:10",
+  "camera": "cam4",
+  "behavior": "drinking"
+ },
+ "2026-04-05 17:08:21|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 17:08:21",
+  "camera": "cam3",
+  "behavior": "feeding"
+ },
+ "2026-04-05 23:18:08|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:18:08",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 08:26:28"
+ },
+ "2026-04-05 01:15:49|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:15:49",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 08:26:31"
+ },
+ "2026-04-05 03:21:24|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:21:24",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 08:44:46"
+ },
+ "2026-04-05 03:39:11|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:39:11",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 08:44:52"
+ },
+ "2026-04-05 00:51:29|cam2|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 00:51:29",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:34:09|cam2|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 21:34:09",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:14:39|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:14:39",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 22:59:22|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 22:59:22",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 02:42:32|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 02:42:32",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "checker": "a person",
+  "saved": "2026-11-03 10:45:49"
+ },
+ "2026-04-05 00:51:51|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:51:51",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:42:14|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:42:14",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:40:11|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:40:11",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:54:36|cam2|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 03:54:36",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:00:59|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:00:59",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 20:57:37|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 20:57:37",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:30:33|cam2|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 01:30:33",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:30:52|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:30:52",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:26:33|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:26:33",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 18:11:47|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 18:11:47",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:16:46|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:16:46",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:41:59|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:41:59",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:33:14|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:33:14",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:23:18|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:23:18",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 18:11:02|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 18:11:02",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:43:02|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:43:02",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:29:27|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:29:27",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:24:59|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:24:59",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:07:41|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:07:41",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:50:47|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:50:47",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:39:12|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:39:12",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:54:16|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:54:16",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:50:50|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:50:50",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:10:15|cam3|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 01:10:15",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:55:25|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:55:25",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:33:37|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:33:37",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:49:41|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:49:41",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:02:26|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:02:26",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:40:18|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:40:18",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 22:29:29|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 22:29:29",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:30:12|cam3|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 01:30:12",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:26:23|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:26:23",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:27:03|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:27:03",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:24:08|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:24:08",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:33:51|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:33:51",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:42:21|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:42:21",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:22:49|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:22:49",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:37:53|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:37:53",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 18:38:00|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 18:38:00",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:33:35|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:33:35",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 02:59:34|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 02:59:34",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:36:43|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:36:43",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:58:37|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:58:37",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:15:28|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:15:28",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 18:40:11|cam2|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 18:40:11",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:27:43|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:27:43",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:14:06|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:14:06",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:45:17|cam4|stop": {
+  "status": "corrected",
+  "label": "lying_down",
+  "start": "2026-04-05 16:45:17",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:09:49"
+ },
+ "2026-04-05 21:38:14|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:38:14",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:38:19|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:38:19",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:25:31|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:25:31",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:22:41|cam2|stop": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 21:22:41",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:09:36"
+ },
+ "2026-04-05 16:44:07|cam4|stop": {
+  "status": "corrected",
+  "label": "lying_down",
+  "start": "2026-04-05 16:44:07",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:09:24"
+ },
+ "2026-04-05 16:43:27|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:43:27",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:35:45|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:35:45",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:35:21|cam4|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 01:35:21",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:07:34|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:07:34",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:37:59|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:37:59",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:39:38|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:39:38",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:02:55|cam3|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 03:02:55",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:43:28|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:43:28",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:04:44|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:04:44",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:46:57|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:46:57",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:48:04|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:48:04",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:39:51|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:39:51",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:56:19|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:56:19",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:28:27|cam4|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 23:28:27",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:29:30|cam3|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 01:29:30",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:43:29|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:43:29",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:01:04|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:01:04",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:22:59|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:22:59",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:57:27|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:57:27",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:27:47|cam4|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 23:27:47",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:57:58|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:57:58",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:50:39|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:50:39",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 18:40:30|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 18:40:30",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:22:48|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:22:48",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:59:45|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 23:59:45",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:10:50"
+ },
+ "2026-04-05 23:03:52|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:03:52",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 19:03:13|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 19:03:13",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:39:58|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:39:58",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:38:04|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:38:04",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:36:33|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:36:33",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:21:31|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:21:31",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:41:09|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:41:09",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:26:37|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:26:37",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:41:44|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:41:44",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:15:14|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:15:14",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:57:51|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:57:51",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:32:49|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:32:49",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:00:43|cam2|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 03:00:43",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:11:08"
+ },
+ "2026-04-05 15:44:54|cam4|stop": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 15:44:54",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:11:14"
+ },
+ "2026-04-05 17:30:17|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 17:30:17",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:11:42"
+ },
+ "2026-04-05 21:20:13|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:20:13",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:52:40|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:52:40",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:47:32|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:47:32",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:52:10|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:52:10",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:08:58|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:08:58",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 02:44:14|cam4|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 02:44:14",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:51:07|cam1|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 03:51:07",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:43:52|cam4|stop": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 16:43:52",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:12:03"
+ },
+ "2026-04-05 03:13:21|cam3|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 03:13:21",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:12:08"
+ },
+ "2026-04-05 15:44:36|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:44:36",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:35:43|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:35:43",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:33:12|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:33:12",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:26:52|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:26:52",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:48:02|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:48:02",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:44:04|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:44:04",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:19:32|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:19:32",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 22:32:31|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 22:32:31",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:39:31|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:39:31",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:25:07|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:25:07",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:19:22|cam2|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 03:19:22",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:13:08"
+ },
+ "2026-04-05 03:37:55|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:37:55",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:45:33|cam4|stop": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 15:45:33",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:13:22"
+ },
+ "2026-04-05 03:41:18|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:41:18",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:37:18|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:37:18",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:58:22|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:58:22",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:15:39|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:15:39",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:49:25|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:49:25",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:12:02|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:12:02",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:28:51|cam3|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 01:28:51",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:26:27|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:26:27",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:53:16|cam4|stop": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 17:53:16",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:13:26"
+ },
+ "2026-04-05 21:33:22|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:33:22",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:05:09|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:05:09",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:27:10|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:27:10",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:41:29|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:41:29",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:14:08|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:14:08",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:31:44|cam4|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 17:31:44",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 18:40:02|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 18:40:02",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:14:27|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:14:27",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:11:43|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:11:43",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:24:54|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:24:54",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:30:51|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 17:30:51",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:29:21|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:29:21",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:45:02|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:45:02",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:40:09|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:40:09",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:47:06|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:47:06",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:10:10|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:10:10",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:31:13|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 17:31:13",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:31:55|cam4|stop": {
+  "status": "corrected",
+  "label": "curling_up",
+  "start": "2026-04-05 17:31:55",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:13:44"
+ },
+ "2026-04-05 01:01:55|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:01:55",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:07:24|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 01:07:24",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:11:41|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:11:41",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:59:52|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:59:52",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:19:46|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:19:46",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:25:26|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:25:26",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:27:47|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:27:47",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:01:48|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:01:48",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:38:07|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:38:07",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:29:10|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:29:10",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:53:47|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:53:47",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:08:00|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:08:00",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:23:04|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:23:04",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:47:50|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:47:50",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 18:37:53|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 18:37:53",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:46:10|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:46:10",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:37:25|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:37:25",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:41:34|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:41:34",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:39:20|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:39:20",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 18:40:41|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 18:40:41",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:11:47|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:11:47",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:43:42|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 23:43:42",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:40:44|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:40:44",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:10:16|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:10:16",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:00:53|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:00:53",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:17:34|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:17:34",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:36:43|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:36:43",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:45:19|cam4|stop": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 15:45:19",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:14:11"
+ },
+ "2026-04-05 15:56:56|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:56:56",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:43:48|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:43:48",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:10:04|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:10:04",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:19:14|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:19:14",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:18:54|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:18:54",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:40:29|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:40:29",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:39:50|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:39:50",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:41:43|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:41:43",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:21:42|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:21:42",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:37:02|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:37:02",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:23:45|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:23:45",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:25:41|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:25:41",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:52:04|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 00:52:04",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:52:29|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:52:29",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:36:19|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:36:19",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:28:40|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:28:40",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:30:02|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:30:02",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:15:56|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:15:56",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:05:40|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:05:40",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:10:37|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:10:37",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:13:23|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:13:23",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:43:36|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:43:36",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:49:39|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:49:39",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:27:47|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:27:47",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:08:02|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:08:02",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:11:29|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:11:29",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:13:10|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:13:10",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:49:39|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:49:39",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 15:55:00|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 15:55:00",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:25:49|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 16:25:49",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:00:01|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:00:01",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 21:17:29|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 21:17:29",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:17:14|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:17:14",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:29:20|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:29:20",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:27:12|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:27:12",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:24:34|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:24:34",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:40:33|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:40:33",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:27:44|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:27:44",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:27:31|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:27:31",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:09:46|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:09:46",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:30:28|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:30:28",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:49:13|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:49:13",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 17:27:41|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 17:27:41",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:30:40|cam2|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:30:40",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:37:09|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:37:09",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:18:23|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:18:23",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 16:24:13|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 16:24:13",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:13:36|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:13:36",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:23:12|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:23:12",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:10:53|cam1|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:10:53",
+  "camera": "cam1",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:24:08|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:24:08",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:13:48|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:13:48",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:18:36|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:18:36",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:29:35|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:29:35",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:43:51|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:43:51",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:02:15|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:02:15",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:32:10|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:32:10",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 01:10:51|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 01:10:51",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 02:44:55|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 02:44:55",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 03:02:33|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 03:02:33",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 04:00:31|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 04:00:31",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 23:45:35|cam4|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:45:35",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:04:58",
+  "checker": "Claude (AI)"
+ },
+ "2026-04-05 00:37:38|cam2|stop": {
+  "status": "corrected",
+  "label": "urination",
+  "start": "2026-04-05 00:37:38",
+  "camera": "cam2",
+  "behavior": "box_top_visit",
+  "category": "stop",
+  "checker": "a person",
+  "saved": "2026-11-03 10:45:40"
+ },
+ "2026-04-05 03:31:33|cam2|stop": {
+  "status": "corrected",
+  "label": "defecation",
+  "start": "2026-04-05 03:31:33",
+  "camera": "cam2",
+  "behavior": "box_top_visit",
+  "category": "stop",
+  "checker": "a person",
+  "saved": "2026-11-03 10:45:42"
+ },
+ "2026-04-05 03:20:21|cam2|stop": {
+  "status": "corrected",
+  "label": "territorial_marking",
+  "start": "2026-04-05 03:20:21",
+  "camera": "cam2",
+  "behavior": "box_top_visit",
+  "category": "stop",
+  "saved": "2026-11-03 10:04:03"
+ },
+ "2026-04-05 21:12:38|cam2|stop": {
+  "status": "corrected",
+  "label": "defecation",
+  "start": "2026-04-05 21:12:38",
+  "camera": "cam2",
+  "behavior": "box_top_visit",
+  "category": "stop",
+  "saved": "2026-11-03 09:56:54"
+ },
+ "2026-04-05 04:03:56|cam2|stop": {
+  "status": "corrected",
+  "label": "defecation",
+  "start": "2026-04-05 04:03:56",
+  "camera": "cam2",
+  "behavior": "box_top_visit",
+  "category": "stop",
+  "saved": "2026-11-03 09:56:59"
+ },
+ "2026-04-05 03:50:26|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 03:50:26",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:06:28"
+ },
+ "2026-04-05 23:13:23|cam3|stop": {
+  "status": "rejected",
+  "label": null,
+  "start": "2026-04-05 23:13:23",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 09:57:23"
+ },
+ "2026-04-05 17:12:31|cam4|stop": {
+  "status": "corrected",
+  "label": "lying_down",
+  "start": "2026-04-05 17:12:31",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:08:43"
+ },
+ "2026-04-05 17:04:08|cam4|stop": {
+  "status": "corrected",
+  "label": "curling_up",
+  "start": "2026-04-05 17:04:08",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:10:28"
+ },
+ "2026-04-05 17:13:35|cam4|stop": {
+  "status": "corrected",
+  "label": "curling_up",
+  "start": "2026-04-05 17:13:35",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:10:31"
+ },
+ "2026-04-05 17:36:17|cam4|stop": {
+  "status": "corrected",
+  "label": "curling_up",
+  "start": "2026-04-05 17:36:17",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:10:53"
+ },
+ "2026-04-05 17:18:44|cam4|stop": {
+  "status": "corrected",
+  "label": "curling_up",
+  "start": "2026-04-05 17:18:44",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:10:56"
+ },
+ "2026-04-05 17:07:50|cam4|stop": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 17:07:50",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:11:27"
+ },
+ "2026-04-05 17:24:33|cam4|stop": {
+  "status": "corrected",
+  "label": "curling_up",
+  "start": "2026-04-05 17:24:33",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:11:49"
+ },
+ "2026-04-05 17:04:29|cam4|stop": {
+  "status": "corrected",
+  "label": "curling_up",
+  "start": "2026-04-05 17:04:29",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:12:16"
+ },
+ "2026-04-05 03:25:11|cam2|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 03:25:11",
+  "camera": "cam2",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:13:12"
+ },
+ "2026-04-05 16:31:17|cam4|stop": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 16:31:17",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:14:18"
+ },
+ "2026-04-05 00:55:32|cam4|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 00:55:32",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:16:00"
+ },
+ "2026-04-05 23:32:18|cam3|stop": {
+  "status": "corrected",
+  "label": "cant_see",
+  "start": "2026-04-05 23:32:18",
+  "camera": "cam3",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:16:04"
+ },
+ "2026-04-05 15:40:21|cam4|stop": {
+  "status": "corrected",
+  "label": "urination",
+  "start": "2026-04-05 15:40:21",
+  "camera": "cam4",
+  "behavior": "short_stop",
+  "category": "stop",
+  "saved": "2026-11-03 10:16:21"
+ },
+ "2026-04-05 00:37:16|cam1|stop": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 00:37:16",
+  "camera": "cam1",
+  "behavior": "doorway_pass",
+  "category": "stop",
+  "saved": "2026-11-03 10:16:27"
+ },
+ "2026-04-05 03:09:01|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 03:09:01",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:17:01"
+ },
+ "2026-04-05 03:11:29|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 03:11:29",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:17:16"
+ },
+ "2026-04-05 03:33:28|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 03:33:28",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:17:25"
+ },
+ "2026-04-05 03:35:53|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 03:35:53",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:17:32"
+ },
+ "2026-04-05 03:44:34|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 03:44:34",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:17:44"
+ },
+ "2026-04-05 03:58:17|cam4|event": {
+  "status": "corrected",
+  "label": "grooming",
+  "start": "2026-04-05 03:58:17",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:18:10"
+ },
+ "2026-04-05 04:06:29|cam4|event": {
+  "status": "corrected",
+  "label": "active_other",
+  "start": "2026-04-05 04:06:29",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:18:29"
+ },
+ "2026-04-05 04:08:05|cam4|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 04:08:05",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:18:34"
+ },
+ "2026-04-05 04:08:37|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 04:08:37",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:18:40"
+ },
+ "2026-04-05 04:22:07|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 04:22:07",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:18:45"
+ },
+ "2026-04-05 04:25:12|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 04:25:12",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:18:53"
+ },
+ "2026-04-05 04:31:04|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 04:31:04",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:18:59"
+ },
+ "2026-04-05 04:39:27|cam4|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 04:39:27",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:19:05"
+ },
+ "2026-04-05 04:40:53|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 04:40:53",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:19:12"
+ },
+ "2026-04-05 15:43:17|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 15:43:17",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:19:18"
+ },
+ "2026-04-05 15:49:03|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 15:49:03",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:19:22"
+ },
+ "2026-04-05 15:53:27|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 15:53:27",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:19:32"
+ },
+ "2026-04-05 15:58:07|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 15:58:07",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:19:56"
+ },
+ "2026-04-05 15:59:12|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 15:59:12",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:20:01"
+ },
+ "2026-04-05 16:00:36|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 16:00:36",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:20:07"
+ },
+ "2026-04-05 16:24:36|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 16:24:36",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:20:20"
+ },
+ "2026-04-05 16:31:29|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 16:31:29",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:20:25"
+ },
+ "2026-04-05 16:32:13|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 16:32:13",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:20:32"
+ },
+ "2026-04-05 16:36:46|cam4|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 16:36:46",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:20:46"
+ },
+ "2026-04-05 17:52:27|cam4|event": {
+  "status": "corrected",
+  "label": "drinking",
+  "start": "2026-04-05 17:52:27",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:20:52"
+ },
+ "2026-04-05 17:53:59|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 17:53:59",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:20:58"
+ },
+ "2026-04-05 18:12:47|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 18:12:47",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:21:04"
+ },
+ "2026-04-05 18:31:55|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 18:31:55",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:21:09"
+ },
+ "2026-04-05 20:02:13|cam3|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 20:02:13",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:21:17"
+ },
+ "2026-04-05 20:57:51|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 20:57:51",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:21:24"
+ },
+ "2026-04-05 21:00:37|cam4|event": {
+  "status": "confirmed",
+  "label": null,
+  "start": "2026-04-05 21:00:37",
+  "camera": "cam4",
+  "behavior": "drinking",
+  "category": "frequency",
+  "saved": "2026-11-03 10:21:28"
+ },
+ "2026-04-05 21:11:39|cam3|event": {
+  "status": "corrected",
+  "label": "walking",
+  "start": "2026-04-05 21:11:39",
+  "camera": "cam3",
+  "behavior": "feeding",
+  "category": "frequency",
+  "saved": "2026-11-03 10:21:34"
+ }
+}

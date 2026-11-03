@@ -1,0 +1,29 @@
+CivetWatch dashboard: http://127.0.0.1:8051  (runs from C:\CMU_Work\Image processing\DIP_CV-main\CivetWatch\runs\archive)
+ * Serving Flask app 'civetwatch.dashboard'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8051
+Press CTRL+C to quit
+127.0.0.1 - - [26/Oct/2026 00:53:58] "GET /run/test_stops_w1 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:53:58] "GET /run/test_stops_w1 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1 HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/charts.png HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005005_drinking_cam4.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005030_feeding_cam3.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005129_possible_toileting_cam2.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005200_feeding_cam3.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005204_possible_toileting_cam3.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005151_possible_marking_cam2.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005347_possible_toileting_cam1.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005952_possible_toileting_cam3.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/010304_drinking_cam4.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005532_possible_marking_cam4.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/clips/005727_possible_toileting_cam1.webm HTTP/1.1" 206 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/stops/cam2_20260405_005129.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/stops/cam2_20260405_005151.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/stops/cam3_20260405_005204.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/stops/cam1_20260405_005347.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/stops/cam4_20260405_005532.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/stops/cam1_20260405_005727.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:07] "GET /run/test_stops_w1/file/stops/cam3_20260405_005952.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 00:54:08] "GET /favicon.ico HTTP/1.1" 404 -

@@ -1,0 +1,520 @@
+start,stop,duration_s,behavior,behavior_name,category,room,camera,confidence,light,visibility,quality,note,needs_review,clip,grid,vlm_answer,toilet_score,kind,guess,guess_prob,box_change
+2026-04-05 00:00:00,2026-04-05 00:35:41,2141.5,not_visible,Not visible,not_visible,,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 00:36:59,2026-04-05 00:37:37,38.5,grooming,Grooming,frequency,R2,cam2,0.754,night_ir,visible,clear,"checked by a person (one bout, several stops)",False,clips/003659_grooming_cam2.webm,stops/cam2_20260405_003659.jpg,,0.021,short_stop,grooming,0.973,0.0
+2026-04-05 00:36:59,2026-04-05 00:37:14,15.0,doorway_pass,Passing between rooms,stop,R2,cam2,0.754,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam2_20260405_003659.jpg,,0.021,short_stop,grooming,0.973,0.0
+2026-04-05 00:37:16,2026-04-05 00:37:37,21.5,doorway_pass,Passing between rooms,stop,R1,cam1,0.796,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam1_20260405_003716.jpg,,0.026,short_stop,nothing,0.951,0.0
+2026-04-05 00:37:38,2026-04-05 00:39:55,137.0,urination,Urination,frequency,R2,cam2,0.834,night_ir,visible,clear,checked by a person,False,clips/003738_urination_cam2.webm,stops/cam2_20260405_003738_box.jpg,,0.023,box_top,nothing,0.981,0.0111
+2026-04-05 00:37:38,2026-04-05 00:39:55,137.0,box_top_visit,On the sleeping box top (check),stop,R2,cam2,0.834,night_ir,visible,clear,checked by a person: Urination,False,,stops/cam2_20260405_003738_box.jpg,,0.023,box_top,nothing,0.981,0.0111
+2026-04-05 00:39:55,2026-04-05 00:40:08,12.5,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 00:40:11,2026-04-05 00:40:23,12.0,short_stop,Short stop (check),stop,R2,cam2,0.877,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_004011.jpg,,0.586,short_stop,nothing,1.0,0.0
+2026-04-05 00:40:44,2026-04-05 00:40:51,7.0,short_stop,Short stop (check),stop,R4,cam4,0.759,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_004044.jpg,,0.005,busy_still,nothing,0.978,0.0
+2026-04-05 00:40:48,2026-04-05 00:41:25,37.0,drinking,Drinking,frequency,R4,cam4,0.762,night_ir,visible,clear,,False,clips/004048_drinking_cam4.webm,,,,,,,
+2026-04-05 00:41:44,2026-04-05 00:42:10,26.0,short_stop,Short stop (check),stop,R2,cam2,0.798,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_004144.jpg,,0.035,short_stop,nothing,0.998,0.0
+2026-04-05 00:42:14,2026-04-05 00:42:37,22.5,short_stop,Short stop (check),stop,R2,cam2,0.858,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_004214.jpg,,0.611,short_stop,nothing,0.999,0.0
+2026-04-05 00:42:39,2026-04-05 00:42:43,3.5,feeding,Feeding,removed,R3,cam3,0.71,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 00:42:51,2026-04-05 00:42:54,3.0,drinking,Drinking,removed,R4,cam4,0.578,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 00:43:48,2026-04-05 00:43:55,6.5,short_stop,Short stop (check),stop,R1,cam1,0.824,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_004348.jpg,,0.004,busy_still,nothing,0.983,0.0
+2026-04-05 00:46:05,2026-04-05 00:50:20,254.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 00:49:43,2026-04-05 01:32:33,2570.0,walking,Locomotion / Walking,duration,R4,cam4,0.617,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 00:50:30,2026-04-05 00:50:35,4.5,feeding,Feeding,removed,R3,cam3,0.718,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 00:50:47,2026-04-05 00:50:53,6.5,short_stop,Short stop (check),stop,R2,cam2,0.792,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_005047.jpg,,0.248,short_stop,nothing,0.993,0.0
+2026-04-05 00:51:29,2026-04-05 00:51:39,10.0,short_stop,Short stop (check),stop,R2,cam2,0.742,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_005129.jpg,,0.837,short_stop,nothing,0.999,0.0
+2026-04-05 00:51:51,2026-04-05 00:51:59,8.5,short_stop,Short stop (check),stop,R2,cam2,0.876,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_005151.jpg,,0.696,short_stop,nothing,1.0,0.0
+2026-04-05 00:52:00,2026-04-05 00:52:04,4.0,feeding,Feeding,frequency,R3,cam3,0.561,night_ir,visible,clear,checked: correct,False,clips/005200_feeding_cam3.webm,,,,,,,
+2026-04-05 00:52:04,2026-04-05 00:52:17,13.0,short_stop,Short stop (check),stop,R3,cam3,0.678,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_005204.jpg,,0.002,short_stop,nothing,0.999,0.0
+2026-04-05 00:52:43,2026-04-05 00:52:59,16.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 00:53:09,2026-04-05 00:53:23,13.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 00:53:47,2026-04-05 00:53:51,4.0,short_stop,Short stop (check),stop,R1,cam1,0.85,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_005347.jpg,,0.007,short_stop,nothing,0.996,0.0
+2026-04-05 00:55:32,2026-04-05 00:56:21,49.0,grooming,Grooming,frequency,R4,cam4,0.697,night_ir,visible,clear,checked by a person,False,clips/005532_grooming_cam4.webm,stops/cam4_20260405_005532.jpg,,0.266,short_stop,nothing,0.996,0.0
+2026-04-05 00:55:32,2026-04-05 00:56:21,49.0,short_stop,Short stop (check),stop,R4,cam4,0.697,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam4_20260405_005532.jpg,,0.266,short_stop,nothing,0.996,0.0
+2026-04-05 00:56:36,2026-04-05 00:56:47,11.5,feeding,Feeding,frequency,R3,cam3,0.755,night_ir,visible,clear,,False,clips/005636_feeding_cam3.webm,,,,,,,
+2026-04-05 00:57:27,2026-04-05 00:57:34,7.5,short_stop,Short stop (check),stop,R1,cam1,0.795,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_005727.jpg,,0.052,short_stop,nothing,0.902,0.0
+2026-04-05 00:58:22,2026-04-05 00:58:50,28.0,short_stop,Short stop (check),stop,R1,cam1,0.802,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_005822.jpg,,0.016,short_stop,nothing,0.99,0.0
+2026-04-05 00:59:15,2026-04-05 00:59:40,24.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 00:59:52,2026-04-05 00:59:56,4.0,short_stop,Short stop (check),stop,R3,cam3,0.765,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_005952.jpg,,0.008,short_stop,nothing,0.972,0.0
+2026-04-05 01:01:55,2026-04-05 01:02:07,12.0,short_stop,Short stop (check),stop,R2,cam2,0.778,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_010155.jpg,,0.009,short_stop,nothing,0.999,0.0
+2026-04-05 01:02:26,2026-04-05 01:02:35,9.0,short_stop,Short stop (check),stop,R2,cam2,0.841,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_010226.jpg,,0.197,short_stop,nothing,1.0,0.0
+2026-04-05 01:04:10,2026-04-05 01:05:34,84.0,drinking,Drinking,frequency,R4,cam4,0.762,night_ir,visible,clear,,False,clips/010410_drinking_cam4.webm,,,,,,,
+2026-04-05 01:05:40,2026-04-05 01:06:18,37.5,short_stop,Short stop (check),stop,R4,cam4,0.7,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_010540.jpg,,0.001,short_stop,nothing,0.967,0.0
+2026-04-05 01:06:19,2026-04-05 01:06:41,22.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 01:07:24,2026-04-05 01:07:39,15.0,short_stop,Short stop (check),stop,R4,cam4,0.728,night_ir,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam4_20260405_010724.jpg,,0.009,busy_still,grooming,0.762,0.0
+2026-04-05 01:07:24,2026-04-05 01:07:39,15.0,grooming,Grooming,frequency,R4,cam4,0.728,night_ir,visible,clear,checked by Claude (AI),False,clips/010724_grooming_cam4.webm,stops/cam4_20260405_010724.jpg,,0.009,busy_still,grooming,0.762,0.0
+2026-04-05 01:08:58,2026-04-05 01:09:10,11.5,short_stop,Short stop (check),stop,R2,cam2,0.808,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_010858.jpg,,0.027,short_stop,nothing,0.987,0.0
+2026-04-05 01:09:24,2026-04-05 01:09:39,15.0,not_visible,Not visible,not_visible,R1,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 01:09:46,2026-04-05 01:09:52,6.5,doorway_pass,Passing between rooms,stop,R2,cam2,0.814,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_010946.jpg,,0.054,short_stop,nothing,0.814,0.0
+2026-04-05 01:10:04,2026-04-05 01:10:09,5.5,short_stop,Short stop (check),stop,R3,cam3,0.782,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_011004.jpg,,0.004,short_stop,nothing,0.987,0.0
+2026-04-05 01:10:15,2026-04-05 01:10:24,9.5,short_stop,Short stop (check),stop,R3,cam3,0.822,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_011015.jpg,,0.219,short_stop,nothing,0.555,0.0
+2026-04-05 01:10:51,2026-04-05 01:11:03,11.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.777,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_011051.jpg,,0.001,short_stop,nothing,0.944,0.0
+2026-04-05 01:11:08,2026-04-05 01:11:19,10.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 01:11:31,2026-04-05 01:11:35,4.5,feeding,Feeding,frequency,R3,cam3,0.775,night_ir,visible,clear,,False,clips/011131_feeding_cam3.webm,,,,,,,
+2026-04-05 01:11:52,2026-04-05 01:13:32,100.0,drinking,Drinking,frequency,R4,cam4,0.738,night_ir,visible,clear,checked: correct,False,clips/011152_drinking_cam4.webm,,,,,,,
+2026-04-05 01:14:08,2026-04-05 01:14:18,10.5,short_stop,Short stop (check),stop,R1,cam1,0.8,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_011408.jpg,,0.013,short_stop,nothing,0.992,0.0
+2026-04-05 01:15:28,2026-04-05 01:15:45,17.5,short_stop,Short stop (check),stop,R2,cam2,0.744,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_011528.jpg,,0.115,busy_still,nothing,0.999,0.0
+2026-04-05 01:15:49,2026-04-05 01:15:57,8.0,short_stop,Short stop (check),stop,R2,cam2,0.805,night_ir,visible,clear,stood still a few seconds - what was it doing?,False,,stops/cam2_20260405_011549.jpg,,0.941,short_stop,nothing,1.0,0.0
+2026-04-05 01:16:15,2026-04-05 01:16:43,28.0,feeding,Feeding,frequency,R3,cam3,0.602,night_ir,visible,clear,checked: correct,False,clips/011615_feeding_cam3.webm,,,,,,,
+2026-04-05 01:16:50,2026-04-05 01:17:38,48.0,drinking,Drinking,frequency,R4,cam4,0.751,night_ir,visible,clear,,False,clips/011650_drinking_cam4.webm,,,,,,,
+2026-04-05 01:19:14,2026-04-05 01:19:18,4.5,short_stop,Short stop (check),stop,R1,cam1,0.837,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_011914.jpg,,0.004,short_stop,nothing,0.975,0.0
+2026-04-05 01:19:46,2026-04-05 01:20:28,41.5,short_stop,Short stop (check),stop,R4,cam4,0.836,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_011946.jpg,,0.008,short_stop,nothing,0.999,0.0
+2026-04-05 01:21:31,2026-04-05 01:21:38,6.5,short_stop,Short stop (check),stop,R4,cam4,0.685,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_012131.jpg,,0.038,short_stop,nothing,0.951,0.0
+2026-04-05 01:21:42,2026-04-05 01:21:47,5.5,short_stop,Short stop (check),stop,R4,cam4,0.763,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_012142.jpg,,0.004,short_stop,nothing,0.926,0.0
+2026-04-05 01:22:42,2026-04-05 01:22:45,3.0,drinking,Drinking,removed,R4,cam4,0.673,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 01:22:52,2026-04-05 01:22:57,5.0,feeding,Feeding,frequency,R3,cam3,0.671,night_ir,visible,clear,checked: correct,False,clips/012252_feeding_cam3.webm,,,,,,,
+2026-04-05 01:23:12,2026-04-05 01:23:54,42.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.813,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_012312.jpg,,0.003,short_stop,nothing,0.994,0.0
+2026-04-05 01:24:08,2026-04-05 01:24:13,5.0,doorway_pass,Passing between rooms,stop,R4,cam4,0.834,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_012408.jpg,,0.002,short_stop,nothing,0.998,0.0
+2026-04-05 01:25:26,2026-04-05 01:25:30,4.0,short_stop,Short stop (check),stop,R1,cam1,0.784,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_012526.jpg,,0.008,short_stop,nothing,0.952,0.0
+2026-04-05 01:27:31,2026-04-05 01:27:35,4.0,doorway_pass,Passing between rooms,stop,R1,cam1,0.825,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_012731.jpg,,0.075,short_stop,nothing,0.997,0.0
+2026-04-05 01:27:47,2026-04-05 01:27:52,5.5,short_stop,Short stop (check),stop,R1,cam1,0.835,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_012747.jpg,,0.008,short_stop,nothing,0.997,0.0
+2026-04-05 01:28:51,2026-04-05 01:29:08,16.5,short_stop,Short stop (check),stop,R3,cam3,0.746,night_ir,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam3_20260405_012851.jpg,,0.015,busy_still,grooming,0.988,0.0
+2026-04-05 01:28:51,2026-04-05 01:30:27,95.5,grooming,Grooming,frequency,R3,cam3,0.746,night_ir,visible,clear,"checked by Claude (AI) (one bout, several stops)",False,clips/012851_grooming_cam3.webm,stops/cam3_20260405_012851.jpg,,0.015,busy_still,grooming,0.988,0.0
+2026-04-05 01:29:30,2026-04-05 01:29:47,17.0,short_stop,Short stop (check),stop,R3,cam3,0.812,night_ir,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam3_20260405_012930.jpg,,0.062,busy_still,grooming,0.999,0.0
+2026-04-05 01:30:12,2026-04-05 01:30:27,15.0,short_stop,Short stop (check),stop,R3,cam3,0.849,night_ir,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam3_20260405_013012.jpg,,0.172,busy_still,grooming,0.999,0.0
+2026-04-05 01:30:33,2026-04-05 01:30:39,5.5,short_stop,Short stop (check),stop,R2,cam2,0.801,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_013033.jpg,,0.433,short_stop,nothing,0.992,0.0
+2026-04-05 01:30:45,2026-04-05 01:31:02,17.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 01:32:33,2026-04-05 01:33:49,76.0,lying_down,Lying down,duration,R4,cam4,0.239,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 01:33:18,2026-04-05 01:33:46,28.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 01:33:49,2026-04-05 01:37:41,231.5,walking,Locomotion / Walking,duration,R4,cam4,0.572,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 01:35:21,2026-04-05 01:35:25,4.5,short_stop,Short stop (check),stop,R4,cam4,0.784,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_013521.jpg,,0.096,short_stop,nothing,0.978,0.0
+2026-04-05 01:35:29,2026-04-05 01:35:44,15.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 01:35:45,2026-04-05 01:35:52,7.0,short_stop,Short stop (check),stop,R4,cam4,0.696,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_013545.jpg,,0.098,short_stop,nothing,0.935,0.0
+2026-04-05 01:35:58,2026-04-05 01:36:11,13.0,not_visible,Not visible,not_visible,R4,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 01:36:33,2026-04-05 01:36:41,7.5,short_stop,Short stop (check),stop,R4,cam4,0.757,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_013633.jpg,,0.039,short_stop,nothing,0.998,0.0
+2026-04-05 01:37:18,2026-04-05 01:37:36,18.0,short_stop,Short stop (check),stop,R2,cam2,0.801,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_013718.jpg,,0.017,short_stop,nothing,0.994,0.0
+2026-04-05 01:37:39,2026-04-05 02:42:27,3888.0,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 02:42:32,2026-04-05 02:42:38,6.0,short_stop,Short stop (check),stop,R2,cam2,0.683,night_ir,visible,clear,moved its body while staying in place - grooming?,False,,stops/cam2_20260405_024232.jpg,,0.7,busy_still,nothing,0.993,0.0
+2026-04-05 02:43:02,2026-04-05 02:44:07,65.0,drinking,Drinking,frequency,R4,cam4,0.738,night_ir,visible,clear,checked: correct,False,clips/024302_drinking_cam4.webm,,,,,,,
+2026-04-05 02:44:14,2026-04-05 02:44:25,11.0,short_stop,Short stop (check),stop,R4,cam4,0.785,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_024414.jpg,,0.026,short_stop,nothing,0.801,0.0
+2026-04-05 02:44:27,2026-04-05 02:44:50,22.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 02:44:55,2026-04-05 02:44:59,4.0,doorway_pass,Passing between rooms,stop,R4,cam4,0.807,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_024455.jpg,,0.001,short_stop,nothing,0.993,0.0
+2026-04-05 02:45:03,2026-04-05 02:45:11,7.5,feeding,Feeding,frequency,R3,cam3,0.682,night_ir,visible,clear,checked: correct,False,clips/024503_feeding_cam3.webm,,,,,,,
+2026-04-05 02:45:34,2026-04-05 02:59:32,838.0,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 02:59:34,2026-04-05 02:59:41,7.5,short_stop,Short stop (check),stop,R2,cam2,0.837,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_025934.jpg,,0.129,busy_still,nothing,0.993,0.0
+2026-04-05 03:00:43,2026-04-05 03:00:56,12.5,short_stop,Short stop (check),stop,R2,cam2,0.808,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam2_20260405_030043.jpg,,0.031,busy_still,nothing,0.997,0.0
+2026-04-05 03:00:43,2026-04-05 03:00:56,12.5,grooming,Grooming,frequency,R2,cam2,0.808,night_ir,visible,clear,checked by a person,False,clips/030043_grooming_cam2.webm,stops/cam2_20260405_030043.jpg,,0.031,busy_still,nothing,0.997,0.0
+2026-04-05 03:00:59,2026-04-05 03:01:19,20.0,short_stop,Short stop (check),stop,R2,cam2,0.855,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_030059.jpg,,0.507,short_stop,nothing,1.0,0.0
+2026-04-05 03:01:31,2026-04-05 03:01:55,24.5,not_visible,Not visible,not_visible,R4,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:02:33,2026-04-05 03:02:53,20.0,doorway_pass,Passing between rooms,stop,R4,cam4,0.801,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_030233.jpg,,0.001,short_stop,nothing,0.994,0.0
+2026-04-05 03:02:55,2026-04-05 03:03:48,53.0,short_stop,Short stop (check),stop,R3,cam3,0.839,night_ir,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam3_20260405_030255.jpg,,0.078,short_stop,grooming,0.984,0.0
+2026-04-05 03:02:55,2026-04-05 03:03:48,53.0,grooming,Grooming,frequency,R3,cam3,0.839,night_ir,visible,clear,checked by Claude (AI),False,clips/030255_grooming_cam3.webm,stops/cam3_20260405_030255.jpg,,0.078,short_stop,grooming,0.984,0.0
+2026-04-05 03:03:53,2026-04-05 03:03:56,3.0,feeding,Feeding,frequency,R3,cam3,0.558,night_ir,visible,clear,checked: correct,False,clips/030353_feeding_cam3.webm,,,,,,,
+2026-04-05 03:04:44,2026-04-05 03:04:48,4.0,short_stop,Short stop (check),stop,R1,cam1,0.788,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_030444.jpg,,0.076,short_stop,nothing,0.966,0.0
+2026-04-05 03:05:09,2026-04-05 03:05:27,17.5,short_stop,Short stop (check),stop,R2,cam2,0.769,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_030509.jpg,,0.014,short_stop,nothing,1.0,0.0
+2026-04-05 03:05:30,2026-04-05 03:06:01,30.5,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:06:17,2026-04-05 03:07:21,64.0,drinking,Drinking,frequency,R4,cam4,0.738,night_ir,visible,clear,checked: correct,False,clips/030617_drinking_cam4.webm,,,,,,,
+2026-04-05 03:07:41,2026-04-05 03:07:51,10.0,short_stop,Short stop (check),stop,R4,cam4,0.595,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_030741.jpg,,0.277,busy_still,nothing,0.979,0.0
+2026-04-05 03:07:48,2026-04-05 03:07:59,10.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 03:08:00,2026-04-05 03:08:08,8.5,short_stop,Short stop (check),stop,R4,cam4,0.793,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_030800.jpg,,0.007,short_stop,nothing,0.999,0.0
+2026-04-05 03:08:09,2026-04-05 03:08:56,47.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:09:01,2026-04-05 03:09:35,34.0,drinking,Drinking,frequency,R4,cam4,0.715,night_ir,visible,clear,checked: correct,False,clips/030901_drinking_cam4.webm,,,,,,,
+2026-04-05 03:10:16,2026-04-05 03:10:22,5.5,short_stop,Short stop (check),stop,R3,cam3,0.752,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_031016.jpg,,0.005,short_stop,nothing,0.999,0.0
+2026-04-05 03:10:37,2026-04-05 03:11:19,42.5,short_stop,Short stop (check),stop,R4,cam4,0.789,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_031037.jpg,,0.002,short_stop,nothing,0.961,0.0
+2026-04-05 03:11:19,2026-04-05 04:37:34,5174.5,walking,Locomotion / Walking,duration,R4,cam4,0.591,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 03:11:29,2026-04-05 03:11:33,3.5,feeding,Feeding,removed,R3,cam3,0.467,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 03:11:41,2026-04-05 03:11:57,16.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 03:13:21,2026-04-05 03:13:28,7.0,short_stop,Short stop (check),stop,R3,cam3,0.82,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam3_20260405_031321.jpg,,0.025,busy_still,nothing,0.996,0.0
+2026-04-05 03:13:21,2026-04-05 03:13:28,7.0,grooming,Grooming,frequency,R3,cam3,0.82,night_ir,visible,clear,checked by a person,False,clips/031321_grooming_cam3.webm,stops/cam3_20260405_031321.jpg,,0.025,busy_still,nothing,0.996,0.0
+2026-04-05 03:13:48,2026-04-05 03:13:52,4.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.808,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_031348.jpg,,0.002,short_stop,nothing,0.998,0.0
+2026-04-05 03:14:06,2026-04-05 03:14:14,8.0,short_stop,Short stop (check),stop,R2,cam2,0.848,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_031406.jpg,,0.109,short_stop,nothing,1.0,0.0
+2026-04-05 03:14:27,2026-04-05 03:14:33,5.5,short_stop,Short stop (check),stop,R3,cam3,0.791,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_031427.jpg,,0.011,short_stop,nothing,0.97,0.0
+2026-04-05 03:14:34,2026-04-05 03:14:51,17.0,not_visible,Not visible,not_visible,R3,cam3,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:15:14,2026-04-05 03:15:20,6.5,short_stop,Short stop (check),stop,R1,cam1,0.831,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_031514.jpg,,0.035,short_stop,nothing,0.92,0.0
+2026-04-05 03:15:39,2026-04-05 03:15:47,8.0,short_stop,Short stop (check),stop,R3,cam3,0.815,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_031539.jpg,,0.016,short_stop,nothing,0.973,0.0
+2026-04-05 03:16:37,2026-04-05 03:17:19,42.0,drinking,Drinking,frequency,R4,cam4,0.75,night_ir,visible,clear,,False,clips/031637_drinking_cam4.webm,,,,,,,
+2026-04-05 03:18:23,2026-04-05 03:18:30,7.0,doorway_pass,Passing between rooms,stop,R1,cam1,0.835,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_031823.jpg,,0.013,short_stop,nothing,0.974,0.0
+2026-04-05 03:18:54,2026-04-05 03:19:05,11.0,short_stop,Short stop (check),stop,R1,cam1,0.836,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_031854.jpg,,0.004,short_stop,nothing,0.996,0.0
+2026-04-05 03:19:22,2026-04-05 03:20:17,54.5,short_stop,Short stop (check),stop,R2,cam2,0.786,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam2_20260405_031922.jpg,,0.019,busy_still,nothing,0.997,0.0
+2026-04-05 03:19:22,2026-04-05 03:20:17,54.5,grooming,Grooming,frequency,R2,cam2,0.786,night_ir,visible,clear,checked by a person,False,clips/031922_grooming_cam2.webm,stops/cam2_20260405_031922.jpg,,0.019,busy_still,nothing,0.997,0.0
+2026-04-05 03:20:21,2026-04-05 03:20:57,36.0,box_top_visit,On the sleeping box top (check),stop,R2,cam2,0.733,night_ir,visible,clear,checked by a person: Territorial marking,False,,stops/cam2_20260405_032021_box.jpg,,0.011,box_top,nothing,0.998,0.0029
+2026-04-05 03:20:21,2026-04-05 03:20:57,36.0,territorial_marking,Territorial marking,frequency,R2,cam2,0.733,night_ir,visible,clear,checked by a person,False,clips/032021_territorial_marking_cam2.webm,stops/cam2_20260405_032021_box.jpg,,0.011,box_top,nothing,0.998,0.0029
+2026-04-05 03:21:24,2026-04-05 03:21:29,5.0,short_stop,Short stop (check),stop,R2,cam2,0.733,night_ir,visible,clear,stood still a few seconds - what was it doing?,False,,stops/cam2_20260405_032124.jpg,,0.869,short_stop,nothing,0.996,0.0
+2026-04-05 03:22:48,2026-04-05 03:22:55,7.0,short_stop,Short stop (check),stop,R3,cam3,0.779,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_032248.jpg,,0.044,busy_still,nothing,0.979,0.0
+2026-04-05 03:23:04,2026-04-05 03:23:10,6.0,short_stop,Short stop (check),stop,R4,cam4,0.641,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_032304.jpg,,0.007,short_stop,nothing,0.703,0.0
+2026-04-05 03:24:34,2026-04-05 03:24:42,7.5,doorway_pass,Passing between rooms,stop,R1,cam1,0.8,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_032434.jpg,,0.128,short_stop,nothing,0.997,0.0
+2026-04-05 03:25:11,2026-04-05 03:25:22,11.0,grooming,Grooming,frequency,R2,cam2,0.834,night_ir,visible,clear,checked by a person,False,clips/032511_grooming_cam2.webm,stops/cam2_20260405_032511.jpg,,0.019,busy_still,nothing,0.998,0.0
+2026-04-05 03:25:11,2026-04-05 03:25:22,11.0,short_stop,Short stop (check),stop,R2,cam2,0.834,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam2_20260405_032511.jpg,,0.019,busy_still,nothing,0.998,0.0
+2026-04-05 03:25:53,2026-04-05 03:29:19,206.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:29:55,2026-04-05 03:30:13,18.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 03:30:28,2026-04-05 03:30:37,9.0,doorway_pass,Passing between rooms,stop,R1,cam1,0.749,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_033028.jpg,,0.038,short_stop,nothing,0.993,0.0
+2026-04-05 03:30:40,2026-04-05 03:30:44,4.0,doorway_pass,Passing between rooms,stop,R2,cam2,0.826,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_033040.jpg,,0.02,short_stop,nothing,0.951,0.0
+2026-04-05 03:30:52,2026-04-05 03:30:58,6.0,short_stop,Short stop (check),stop,R2,cam2,0.814,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_033052.jpg,,0.425,short_stop,nothing,1.0,0.0
+2026-04-05 03:31:33,2026-04-05 03:33:02,89.5,defecation,Defecation,frequency,R2,cam2,0.829,night_ir,visible,clear,checked by a person,False,clips/033133_defecation_cam2.webm,stops/cam2_20260405_033133_box.jpg,,0.027,box_top,nothing,0.987,0.0028
+2026-04-05 03:31:33,2026-04-05 03:33:02,89.5,box_top_visit,On the sleeping box top (check),stop,R2,cam2,0.829,night_ir,visible,clear,checked by a person: Defecation,False,,stops/cam2_20260405_033133_box.jpg,,0.027,box_top,nothing,0.987,0.0028
+2026-04-05 03:33:02,2026-04-05 03:33:17,15.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:33:28,2026-04-05 03:33:32,4.5,feeding,Feeding,removed,R3,cam3,0.664,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 03:34:09,2026-04-05 03:34:20,11.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:35:53,2026-04-05 03:36:18,25.5,drinking,Drinking,frequency,R4,cam4,0.745,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 03:36:43,2026-04-05 03:36:58,15.0,short_stop,Short stop (check),stop,R2,cam2,0.836,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_033643.jpg,,0.125,short_stop,nothing,0.999,0.0
+2026-04-05 03:37:02,2026-04-05 03:37:13,11.0,short_stop,Short stop (check),stop,R2,cam2,0.74,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_033702.jpg,,0.003,short_stop,nothing,0.999,0.0
+2026-04-05 03:37:55,2026-04-05 03:38:04,9.5,short_stop,Short stop (check),stop,R3,cam3,0.74,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_033755.jpg,,0.019,short_stop,nothing,0.983,0.0
+2026-04-05 03:39:11,2026-04-05 03:39:17,6.5,short_stop,Short stop (check),stop,R2,cam2,0.784,night_ir,visible,clear,stood still a few seconds - what was it doing?,False,,stops/cam2_20260405_033911.jpg,,0.848,short_stop,nothing,0.999,0.0
+2026-04-05 03:39:34,2026-04-05 03:39:48,14.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:40:09,2026-04-05 03:40:28,19.5,short_stop,Short stop (check),stop,R1,cam1,0.751,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_034009.jpg,,0.01,short_stop,nothing,0.987,0.0
+2026-04-05 03:41:09,2026-04-05 03:41:14,5.0,short_stop,Short stop (check),stop,R3,cam3,0.834,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_034109.jpg,,0.036,short_stop,nothing,0.992,0.0
+2026-04-05 03:41:18,2026-04-05 03:41:57,38.5,short_stop,Short stop (check),stop,R3,cam3,0.789,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_034118.jpg,,0.018,short_stop,nothing,0.995,0.0
+2026-04-05 03:43:11,2026-04-05 03:43:33,21.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:44:34,2026-04-05 03:44:37,3.0,feeding,Feeding,removed,R3,cam3,0.511,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 03:45:53,2026-04-05 03:45:57,4.0,feeding,Feeding,frequency,R3,cam3,0.809,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 03:46:30,2026-04-05 03:46:48,18.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:47:06,2026-04-05 03:47:12,6.0,short_stop,Short stop (check),stop,R1,cam1,0.792,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_034706.jpg,,0.01,short_stop,nothing,0.991,0.0
+2026-04-05 03:49:13,2026-04-05 03:49:17,4.0,doorway_pass,Passing between rooms,stop,R2,cam2,0.738,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_034913.jpg,,0.028,short_stop,grooming,0.533,0.0
+2026-04-05 03:49:25,2026-04-05 03:49:29,4.5,short_stop,Short stop (check),stop,R1,cam1,0.782,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_034925.jpg,,0.016,short_stop,nothing,0.999,0.0
+2026-04-05 03:49:41,2026-04-05 03:49:48,6.5,short_stop,Short stop (check),stop,R2,cam2,0.755,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_034941.jpg,,0.207,short_stop,nothing,0.998,0.0
+2026-04-05 03:49:58,2026-04-05 03:50:10,11.5,not_visible,Not visible,not_visible,R1,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:50:26,2026-04-05 03:50:34,8.0,grooming,Grooming,frequency,R4,cam4,0.73,night_ir,visible,clear,checked by a person,False,,stops/cam4_20260405_035026.jpg,,0.005,short_stop,grooming,0.543,0.0
+2026-04-05 03:50:26,2026-04-05 03:50:34,8.0,short_stop,Short stop (check),stop,R4,cam4,0.73,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam4_20260405_035026.jpg,,0.005,short_stop,grooming,0.543,0.0
+2026-04-05 03:50:50,2026-04-05 03:51:02,12.0,short_stop,Short stop (check),stop,R1,cam1,0.85,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_035050.jpg,,0.227,short_stop,nothing,0.98,0.0
+2026-04-05 03:51:07,2026-04-05 03:51:22,15.5,grooming,Grooming,frequency,R1,cam1,0.799,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_035107.jpg,,0.026,short_stop,grooming,0.916,0.0
+2026-04-05 03:51:07,2026-04-05 03:51:22,15.5,short_stop,Short stop (check),stop,R1,cam1,0.799,night_ir,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam1_20260405_035107.jpg,,0.026,short_stop,grooming,0.916,0.0
+2026-04-05 03:53:46,2026-04-05 03:54:00,14.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 03:54:16,2026-04-05 03:54:22,6.0,short_stop,Short stop (check),stop,R1,cam1,0.825,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_035416.jpg,,0.238,short_stop,nothing,0.989,0.0
+2026-04-05 03:54:36,2026-04-05 03:54:42,5.5,short_stop,Short stop (check),stop,R2,cam2,0.77,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_035436.jpg,,0.522,short_stop,nothing,0.999,0.0
+2026-04-05 03:55:25,2026-04-05 03:55:31,6.5,short_stop,Short stop (check),stop,R2,cam2,0.835,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_035525.jpg,,0.215,short_stop,nothing,0.999,0.0
+2026-04-05 03:56:15,2026-04-05 03:56:38,23.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 03:57:58,2026-04-05 03:58:10,12.0,short_stop,Short stop (check),stop,R3,cam3,0.802,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_035758.jpg,,0.048,short_stop,nothing,0.996,0.0
+2026-04-05 03:58:17,2026-04-05 03:58:22,4.5,grooming,Grooming,frequency,R4,cam4,0.682,night_ir,visible,clear,checked: it was Grooming,False,,,,,,,,
+2026-04-05 03:58:34,2026-04-05 03:59:16,42.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 03:59:26,2026-04-05 04:00:07,40.5,not_visible,Not visible,not_visible,R2,cam2,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 04:00:12,2026-04-05 04:00:27,14.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 04:00:31,2026-04-05 04:00:40,9.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.854,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_040031.jpg,,0.001,short_stop,nothing,0.994,0.0
+2026-04-05 04:00:53,2026-04-05 04:00:59,6.5,short_stop,Short stop (check),stop,R1,cam1,0.836,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_040053.jpg,,0.005,short_stop,nothing,0.989,0.0
+2026-04-05 04:01:04,2026-04-05 04:01:15,11.0,short_stop,Short stop (check),stop,R1,cam1,0.781,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_040104.jpg,,0.059,short_stop,nothing,0.998,0.0
+2026-04-05 04:02:24,2026-04-05 04:02:35,11.0,not_visible,Not visible,not_visible,R3,cam3,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 04:02:52,2026-04-05 04:03:07,15.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 04:03:56,2026-04-05 04:04:26,30.0,defecation,Defecation,frequency,R2,cam2,0.84,night_ir,visible,clear,checked by a person,False,,stops/cam2_20260405_040356_box.jpg,,0.03,box_top,nothing,0.99,0.0001
+2026-04-05 04:03:56,2026-04-05 04:04:26,30.0,box_top_visit,On the sleeping box top (check),stop,R2,cam2,0.84,night_ir,visible,clear,checked by a person: Defecation,False,,stops/cam2_20260405_040356_box.jpg,,0.03,box_top,nothing,0.99,0.0001
+2026-04-05 04:06:14,2026-04-05 04:06:37,23.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 04:06:29,2026-04-05 04:06:31,2.0,drinking,Drinking,removed,R4,cam4,0.481,night_ir,visible,clear,removed by a person: it was Active (other),False,,,,,,,,
+2026-04-05 04:07:34,2026-04-05 04:07:42,8.5,short_stop,Short stop (check),stop,R4,cam4,0.815,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_040734.jpg,,0.087,short_stop,nothing,0.996,0.0
+2026-04-05 04:08:05,2026-04-05 04:08:09,4.0,drinking,Drinking,removed,R4,cam4,0.58,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 04:08:37,2026-04-05 04:08:40,3.5,feeding,Feeding,removed,R3,cam3,0.7,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 04:10:10,2026-04-05 04:10:25,15.5,short_stop,Short stop (check),stop,R3,cam3,0.811,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_041010.jpg,,0.01,short_stop,nothing,0.916,0.0
+2026-04-05 04:10:53,2026-04-05 04:10:57,4.0,doorway_pass,Passing between rooms,stop,R1,cam1,0.809,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_041053.jpg,,0.008,short_stop,nothing,0.85,0.0
+2026-04-05 04:11:43,2026-04-05 04:11:55,11.5,short_stop,Short stop (check),stop,R1,cam1,0.629,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_041143.jpg,,0.011,short_stop,nothing,0.998,0.0
+2026-04-05 04:12:02,2026-04-05 04:12:07,5.0,short_stop,Short stop (check),stop,R1,cam1,0.768,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_041202.jpg,,0.016,short_stop,nothing,0.994,0.0
+2026-04-05 04:13:23,2026-04-05 04:13:27,4.0,short_stop,Short stop (check),stop,R3,cam3,0.73,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_041323.jpg,,0.002,short_stop,nothing,0.987,0.0
+2026-04-05 04:13:36,2026-04-05 04:13:44,8.0,doorway_pass,Passing between rooms,stop,R4,cam4,0.765,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_041336.jpg,,0.008,short_stop,nothing,0.996,0.0
+2026-04-05 04:14:39,2026-04-05 04:14:44,5.0,short_stop,Short stop (check),stop,R2,cam2,0.814,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_041439.jpg,,0.79,short_stop,nothing,0.999,0.0
+2026-04-05 04:17:34,2026-04-05 04:17:38,4.5,short_stop,Short stop (check),stop,R4,cam4,0.764,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_041734.jpg,,0.005,short_stop,nothing,0.964,0.0
+2026-04-05 04:18:36,2026-04-05 04:18:47,11.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.754,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_041836.jpg,,0.002,short_stop,nothing,0.909,0.0
+2026-04-05 04:22:07,2026-04-05 04:22:10,3.5,feeding,Feeding,removed,R3,cam3,0.57,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 04:22:49,2026-04-05 04:22:54,5.0,short_stop,Short stop (check),stop,R2,cam2,0.841,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_042249.jpg,,0.151,short_stop,nothing,1.0,0.0
+2026-04-05 04:25:12,2026-04-05 04:25:22,10.0,drinking,Drinking,frequency,R4,cam4,0.713,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 04:26:02,2026-04-05 04:26:18,15.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 04:27:44,2026-04-05 04:27:56,11.5,doorway_pass,Passing between rooms,stop,R1,cam1,0.826,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_042744.jpg,,0.079,short_stop,nothing,0.997,0.0
+2026-04-05 04:29:35,2026-04-05 04:29:40,5.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.848,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_042935.jpg,,0.002,short_stop,nothing,0.995,0.0
+2026-04-05 04:30:45,2026-04-05 04:30:58,12.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 04:31:04,2026-04-05 04:31:15,11.0,feeding,Feeding,frequency,R3,cam3,0.743,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 04:33:12,2026-04-05 04:33:18,5.5,short_stop,Short stop (check),stop,R2,cam2,0.757,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_043312.jpg,,0.023,short_stop,nothing,0.999,0.0
+2026-04-05 04:33:37,2026-04-05 04:33:49,12.0,short_stop,Short stop (check),stop,R1,cam1,0.847,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_043337.jpg,,0.211,short_stop,nothing,0.981,0.0
+2026-04-05 04:35:09,2026-04-05 04:35:26,17.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 04:35:31,2026-04-05 04:35:49,18.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 04:36:43,2026-04-05 04:36:47,4.0,short_stop,Short stop (check),stop,R4,cam4,0.743,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_043643.jpg,,0.005,short_stop,nothing,0.984,0.0
+2026-04-05 04:37:09,2026-04-05 04:37:15,6.0,doorway_pass,Passing between rooms,stop,R1,cam1,0.854,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_043709.jpg,,0.014,short_stop,nothing,0.931,0.0
+2026-04-05 04:37:25,2026-04-05 04:37:29,4.0,short_stop,Short stop (check),stop,R2,cam2,0.816,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_043725.jpg,,0.006,short_stop,nothing,0.999,0.0
+2026-04-05 04:37:32,2026-04-05 04:39:06,94.0,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 04:39:12,2026-04-05 04:39:17,5.5,short_stop,Short stop (check),stop,R2,cam2,0.84,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_043912.jpg,,0.239,short_stop,nothing,0.997,0.0
+2026-04-05 04:39:27,2026-04-05 04:39:30,3.5,drinking,Drinking,removed,R4,cam4,0.66,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 04:39:32,2026-04-05 04:39:47,15.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 04:39:51,2026-04-05 04:40:03,11.5,short_stop,Short stop (check),stop,R4,cam4,0.714,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_043951.jpg,,0.066,busy_still,nothing,0.922,0.0
+2026-04-05 04:40:29,2026-04-05 04:40:50,21.0,short_stop,Short stop (check),stop,R3,cam3,0.716,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_044029.jpg,,0.004,busy_still,nothing,0.992,0.0
+2026-04-05 04:40:53,2026-04-05 04:41:17,23.5,feeding,Feeding,removed,R3,cam3,0.613,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 04:41:34,2026-04-05 04:41:40,6.0,short_stop,Short stop (check),stop,R1,cam1,0.738,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_044134.jpg,,0.006,short_stop,nothing,0.947,0.0
+2026-04-05 04:41:47,2026-04-05 04:42:02,15.0,not_visible,Not visible,not_visible,R1,cam1,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 04:42:17,2026-04-05 04:44:28,130.5,walking,Locomotion / Walking,duration,R4,cam4,0.561,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 04:42:21,2026-04-05 04:42:28,7.5,short_stop,Short stop (check),stop,R2,cam2,0.712,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_044221.jpg,,0.155,busy_still,nothing,0.999,0.0
+2026-04-05 04:42:48,2026-04-05 04:42:59,11.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 04:43:36,2026-04-05 04:43:47,10.5,short_stop,Short stop (check),stop,R4,cam4,0.662,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_044336.jpg,,0.001,short_stop,nothing,0.994,0.0
+2026-04-05 04:43:51,2026-04-05 04:43:57,6.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.801,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_044351.jpg,,0.002,short_stop,nothing,0.995,0.0
+2026-04-05 04:44:04,2026-04-05 04:44:10,6.0,short_stop,Short stop (check),stop,R3,cam3,0.711,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_044404.jpg,,0.021,short_stop,nothing,0.949,0.0
+2026-04-05 04:44:26,2026-04-05 15:38:01,39214.5,not_visible,Not visible,not_visible,R2,cam2,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 15:38:04,2026-04-05 15:38:11,7.5,short_stop,Short stop (check),stop,R2,cam2,0.848,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_153804.jpg,,0.041,short_stop,nothing,0.994,0.0
+2026-04-05 15:38:19,2026-04-05 15:38:23,4.5,short_stop,Short stop (check),stop,R3,cam3,0.7,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_153819.jpg,,0.102,short_stop,nothing,0.809,0.0
+2026-04-05 15:38:58,2026-04-05 15:39:25,27.0,feeding,Feeding,frequency,R3,cam3,0.773,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 15:39:06,2026-04-05 16:02:41,1415.0,walking,Locomotion / Walking,duration,R4,cam4,0.637,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 15:39:50,2026-04-05 15:40:03,13.5,short_stop,Short stop (check),stop,R4,cam4,0.875,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_153950.jpg,,0.004,short_stop,nothing,0.997,0.0
+2026-04-05 15:40:06,2026-04-05 15:40:12,6.5,drinking,Drinking,frequency,R4,cam4,0.764,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 15:40:21,2026-04-05 15:40:38,16.5,urination,Urination,frequency,R4,cam4,0.722,day_colour,visible,clear,checked by a person,False,,stops/cam4_20260405_154021.jpg,,0.003,short_stop,nothing,0.934,0.0
+2026-04-05 15:40:21,2026-04-05 15:40:38,16.5,short_stop,Short stop (check),stop,R4,cam4,0.722,day_colour,visible,clear,checked by a person: Urination,False,,stops/cam4_20260405_154021.jpg,,0.003,short_stop,nothing,0.934,0.0
+2026-04-05 15:41:07,2026-04-05 15:41:29,21.5,not_visible,Not visible,not_visible,R4,cam4,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 15:41:35,2026-04-05 15:42:55,80.0,not_visible,Not visible,not_visible,R4,cam4,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 15:43:17,2026-04-05 15:44:23,66.5,feeding,Feeding,frequency,R3,cam3,0.678,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 15:44:36,2026-04-05 15:44:41,4.5,short_stop,Short stop (check),stop,R3,cam3,0.818,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_154436.jpg,,0.025,short_stop,nothing,0.897,0.0
+2026-04-05 15:44:54,2026-04-05 15:45:05,11.0,short_stop,Short stop (check),stop,R4,cam4,0.643,day_colour,visible,clear,checked by a person: Active (other),False,,stops/cam4_20260405_154454.jpg,,0.031,busy_still,nothing,0.998,0.0
+2026-04-05 15:45:19,2026-04-05 15:45:27,8.0,short_stop,Short stop (check),stop,R4,cam4,0.776,day_colour,visible,clear,checked by a person: Active (other),False,,stops/cam4_20260405_154519.jpg,,0.005,busy_still,nothing,0.998,0.0
+2026-04-05 15:45:33,2026-04-05 15:45:46,13.0,short_stop,Short stop (check),stop,R4,cam4,0.707,day_colour,visible,clear,checked by a person: Active (other),False,,stops/cam4_20260405_154533.jpg,,0.019,busy_still,nothing,0.999,0.0
+2026-04-05 15:45:47,2026-04-05 15:46:56,69.0,not_visible,Not visible,not_visible,R4,cam4,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 15:46:57,2026-04-05 15:47:18,20.5,short_stop,Short stop (check),stop,R4,cam4,0.796,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_154657.jpg,,0.073,busy_still,nothing,0.996,0.0
+2026-04-05 15:47:32,2026-04-05 15:47:41,9.0,short_stop,Short stop (check),stop,R4,cam4,0.808,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_154732.jpg,,0.028,busy_still,nothing,0.998,0.0
+2026-04-05 15:47:50,2026-04-05 15:47:57,6.5,short_stop,Short stop (check),stop,R4,cam4,0.857,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_154750.jpg,,0.007,short_stop,nothing,0.975,0.0
+2026-04-05 15:48:04,2026-04-05 15:48:21,16.5,short_stop,Short stop (check),stop,R4,cam4,0.838,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_154804.jpg,,0.071,busy_still,nothing,1.0,0.0
+2026-04-05 15:49:03,2026-04-05 15:50:29,86.5,feeding,Feeding,frequency,R3,cam3,0.743,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 15:49:39,2026-04-05 15:49:59,20.5,short_stop,Short stop (check),stop,R3,cam3,0.837,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_154939.jpg,,0.001,busy_still,nothing,1.0,0.0
+2026-04-05 15:50:39,2026-04-05 15:51:19,40.5,short_stop,Short stop (check),stop,R2,cam2,0.834,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_155039.jpg,,0.047,short_stop,nothing,0.997,0.0
+2026-04-05 15:51:32,2026-04-05 15:51:42,10.5,drinking,Drinking,frequency,R4,cam4,0.793,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 15:51:59,2026-04-05 15:52:04,5.5,feeding,Feeding,frequency,R3,cam3,0.781,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 15:52:10,2026-04-05 15:52:18,8.0,short_stop,Short stop (check),stop,R2,cam2,0.845,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_155210.jpg,,0.028,busy_still,nothing,0.995,0.0
+2026-04-05 15:52:29,2026-04-05 15:52:33,4.0,short_stop,Short stop (check),stop,R2,cam2,0.849,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_155229.jpg,,0.004,short_stop,nothing,0.984,0.0
+2026-04-05 15:52:40,2026-04-05 15:52:45,5.0,short_stop,Short stop (check),stop,R2,cam2,0.846,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_155240.jpg,,0.029,short_stop,nothing,0.998,0.0
+2026-04-05 15:52:57,2026-04-05 15:53:08,11.5,not_visible,Not visible,not_visible,R2,cam2,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 15:53:27,2026-04-05 15:53:36,9.0,feeding,Feeding,frequency,R3,cam3,0.715,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 15:53:47,2026-04-05 15:53:58,11.0,not_visible,Not visible,not_visible,R3,cam3,1.0,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 15:54:23,2026-04-05 15:54:42,19.0,not_visible,Not visible,not_visible,R4,cam4,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 15:55:00,2026-04-05 15:55:09,9.5,short_stop,Short stop (check),stop,R2,cam2,0.769,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_155500.jpg,,0.0,short_stop,nothing,1.0,0.0
+2026-04-05 15:55:41,2026-04-05 15:55:57,16.5,not_visible,Not visible,not_visible,R3,cam3,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 15:55:59,2026-04-05 15:56:06,6.5,feeding,Feeding,frequency,R3,cam3,0.78,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 15:56:19,2026-04-05 15:56:25,6.0,short_stop,Short stop (check),stop,R2,cam2,0.766,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_155619.jpg,,0.066,short_stop,nothing,0.996,0.0
+2026-04-05 15:56:36,2026-04-05 15:56:42,6.0,drinking,Drinking,frequency,R4,cam4,0.799,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 15:56:56,2026-04-05 15:57:09,12.5,short_stop,Short stop (check),stop,R3,cam3,0.869,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_155656.jpg,,0.005,short_stop,nothing,0.963,0.0
+2026-04-05 15:57:51,2026-04-05 15:57:59,7.5,short_stop,Short stop (check),stop,R4,cam4,0.864,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_155751.jpg,,0.032,short_stop,nothing,0.999,0.0
+2026-04-05 15:58:07,2026-04-05 15:58:10,3.0,feeding,Feeding,removed,R3,cam3,0.693,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 15:58:37,2026-04-05 15:58:58,21.0,short_stop,Short stop (check),stop,R2,cam2,0.861,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_155837.jpg,,0.116,short_stop,nothing,0.977,0.0
+2026-04-05 15:59:12,2026-04-05 15:59:17,4.5,drinking,Drinking,frequency,R4,cam4,0.745,day_colour,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 16:00:36,2026-04-05 16:00:54,18.0,feeding,Feeding,frequency,R3,cam3,0.656,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 16:01:34,2026-04-05 16:01:38,3.5,drinking,Drinking,frequency,R4,cam4,0.769,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 16:01:48,2026-04-05 16:02:11,23.0,short_stop,Short stop (check),stop,R3,cam3,0.865,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_160148.jpg,,0.008,short_stop,nothing,1.0,0.0
+2026-04-05 16:02:31,2026-04-05 16:19:31,1020.0,not_visible,Not visible,not_visible,R3,cam3,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 16:19:32,2026-04-05 16:19:39,7.0,short_stop,Short stop (check),stop,R3,cam3,0.76,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_161932.jpg,,0.021,busy_still,nothing,1.0,0.0
+2026-04-05 16:19:51,2026-04-05 16:20:14,23.0,feeding,Feeding,frequency,R3,cam3,0.792,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 16:21:14,2026-04-05 16:21:21,7.0,feeding,Feeding,frequency,R3,cam3,0.773,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 16:23:45,2026-04-05 16:24:09,24.0,short_stop,Short stop (check),stop,R4,cam4,0.841,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_162345.jpg,,0.003,short_stop,nothing,0.996,0.0
+2026-04-05 16:24:13,2026-04-05 16:24:27,14.0,doorway_pass,Passing between rooms,stop,R4,cam4,0.843,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_162413.jpg,,0.013,short_stop,nothing,0.999,0.0
+2026-04-05 16:24:36,2026-04-05 16:24:40,4.0,feeding,Feeding,removed,R3,cam3,0.744,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 16:24:54,2026-04-05 16:25:16,22.5,short_stop,Short stop (check),stop,R4,cam4,0.868,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_162454.jpg,,0.011,short_stop,nothing,0.993,0.0
+2026-04-05 16:25:31,2026-04-05 16:25:43,12.0,short_stop,Short stop (check),stop,R4,cam4,0.873,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_162531.jpg,,0.102,busy_still,nothing,0.999,0.0
+2026-04-05 16:25:49,2026-04-05 16:26:39,50.5,short_stop,Short stop (check),stop,R4,cam4,0.724,day_colour,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam4_20260405_162549.jpg,,0.0,busy_still,grooming,0.98,0.0
+2026-04-05 16:25:49,2026-04-05 16:26:39,50.5,grooming,Grooming,frequency,R4,cam4,0.724,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_162549.jpg,,0.0,busy_still,grooming,0.98,0.0
+2026-04-05 16:26:52,2026-04-05 16:26:59,7.5,short_stop,Short stop (check),stop,R4,cam4,0.578,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_162652.jpg,,0.022,busy_still,nothing,0.931,0.0
+2026-04-05 16:27:12,2026-04-05 16:27:34,22.0,doorway_pass,Passing between rooms,stop,R4,cam4,0.799,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_162712.jpg,,0.38,short_stop,nothing,1.0,0.0
+2026-04-05 16:27:47,2026-04-05 16:28:05,18.0,short_stop,Short stop (check),stop,R3,cam3,0.806,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_162747.jpg,,0.001,busy_still,nothing,1.0,0.0
+2026-04-05 16:27:54,2026-04-05 16:28:55,61.0,feeding,Feeding,frequency,R3,cam3,0.752,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 16:28:03,2026-04-05 16:45:41,1058.0,walking,Locomotion / Walking,duration,R4,cam4,0.644,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 16:28:06,2026-04-05 16:28:41,35.0,not_visible,Not visible,not_visible,R3,,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 16:29:20,2026-04-05 16:29:49,29.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.826,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_162920.jpg,,0.682,short_stop,nothing,1.0,0.0
+2026-04-05 16:30:02,2026-04-05 16:30:08,6.0,feeding,Feeding,frequency,R3,cam3,0.761,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 16:31:17,2026-04-05 16:31:30,13.0,short_stop,Short stop (check),stop,R4,cam4,0.805,day_colour,visible,clear,checked by a person: Active (other),False,,stops/cam4_20260405_163117.jpg,,0.005,busy_still,nothing,0.612,0.0
+2026-04-05 16:31:29,2026-04-05 16:32:01,31.5,drinking,Drinking,frequency,R4,cam4,0.449,day_colour,out_of_view,clear,checked: correct,False,,,,,,,,
+2026-04-05 16:31:39,2026-04-05 16:32:01,21.5,not_visible,Not visible,not_visible,R4,cam4,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 16:32:13,2026-04-05 16:33:19,66.5,feeding,Feeding,removed,R3,cam3,0.693,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 16:33:26,2026-04-05 16:33:46,20.5,not_visible,Not visible,not_visible,R4,cam4,1.0,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 16:33:51,2026-04-05 16:34:35,44.0,short_stop,Short stop (check),stop,R2,cam2,0.824,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_163351.jpg,,0.158,short_stop,nothing,0.989,0.0
+2026-04-05 16:35:25,2026-04-05 16:35:29,3.5,drinking,Drinking,frequency,R4,cam4,0.792,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 16:36:19,2026-04-05 16:36:23,4.0,short_stop,Short stop (check),stop,R2,cam2,0.776,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_163619.jpg,,0.002,short_stop,nothing,0.996,0.0
+2026-04-05 16:36:46,2026-04-05 16:36:55,8.5,drinking,Drinking,removed,R4,cam4,0.583,day_colour,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 16:37:38,2026-04-05 16:38:00,21.5,not_visible,Not visible,not_visible,R1,cam1,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 16:38:07,2026-04-05 16:38:44,37.0,short_stop,Short stop (check),stop,R2,cam2,0.855,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_163807.jpg,,0.008,short_stop,nothing,0.994,0.0
+2026-04-05 16:39:10,2026-04-05 16:39:13,3.0,drinking,Drinking,frequency,R4,cam4,0.713,day_colour,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 16:39:20,2026-04-05 16:39:25,5.0,short_stop,Short stop (check),stop,R4,cam4,0.835,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_163920.jpg,,0.006,short_stop,nothing,0.997,0.0
+2026-04-05 16:39:31,2026-04-05 16:39:49,18.0,short_stop,Short stop (check),stop,R3,cam3,0.782,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_163931.jpg,,0.02,busy_still,nothing,0.994,0.0
+2026-04-05 16:40:18,2026-04-05 16:40:27,9.0,short_stop,Short stop (check),stop,R1,cam1,0.778,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_164018.jpg,,0.191,busy_still,nothing,0.957,0.0
+2026-04-05 16:40:33,2026-04-05 16:40:53,20.0,doorway_pass,Passing between rooms,stop,R2,cam2,0.858,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_164033.jpg,,0.12,short_stop,nothing,0.957,0.0
+2026-04-05 16:40:54,2026-04-05 16:41:42,48.0,not_visible,Not visible,not_visible,R1,cam1,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 16:41:43,2026-04-05 16:41:48,4.5,short_stop,Short stop (check),stop,R1,cam1,0.741,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_164143.jpg,,0.004,short_stop,nothing,0.994,0.0
+2026-04-05 16:41:59,2026-04-05 16:42:08,8.5,short_stop,Short stop (check),stop,R2,cam2,0.865,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_164159.jpg,,0.37,short_stop,nothing,0.991,0.0
+2026-04-05 16:43:02,2026-04-05 16:43:07,5.0,short_stop,Short stop (check),stop,R2,cam2,0.827,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_164302.jpg,,0.295,short_stop,nothing,0.996,0.0
+2026-04-05 16:43:27,2026-04-05 16:43:34,6.5,short_stop,Short stop (check),stop,R4,cam4,0.851,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_164327.jpg,,0.099,short_stop,nothing,1.0,0.0
+2026-04-05 16:43:52,2026-04-05 16:44:04,12.0,short_stop,Short stop (check),stop,R4,cam4,0.897,day_colour,visible,clear,checked by a person: Active (other),False,,stops/cam4_20260405_164352.jpg,,0.026,busy_still,nothing,0.993,0.0
+2026-04-05 16:44:07,2026-04-05 16:44:25,17.5,short_stop,Short stop (check),stop,R4,cam4,0.904,day_colour,visible,clear,checked by a person: Lying down,False,,stops/cam4_20260405_164407.jpg,,0.101,busy_still,nothing,1.0,0.0
+2026-04-05 16:44:25,2026-04-05 16:44:27,2.0,drinking,Drinking,frequency,R4,cam4,0.849,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 16:45:17,2026-04-05 16:45:41,24.5,short_stop,Short stop (check),stop,R4,cam4,0.906,day_colour,visible,clear,checked by a person: Lying down,False,,stops/cam4_20260405_164517.jpg,,0.107,busy_still,nothing,0.999,0.0
+2026-04-05 16:45:41,2026-04-05 16:48:35,173.5,lying_down,Lying down,duration,R4,cam4,0.81,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 16:48:35,2026-04-05 16:50:56,141.0,curling_up,Curling up,duration,R4,cam4,0.813,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 16:50:56,2026-04-05 17:26:19,2123.0,lying_down,Lying down,duration,R4,cam4,0.803,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 16:55:34,2026-04-05 16:55:36,2.0,drinking,Drinking,frequency,R4,cam4,0.846,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 17:04:08,2026-04-05 17:04:19,10.5,short_stop,Short stop (check),stop,R4,cam4,0.903,day_colour,visible,clear,checked by a person: Curling up,False,,stops/cam4_20260405_170408.jpg,,0.061,busy_still,nothing,1.0,0.0
+2026-04-05 17:04:29,2026-04-05 17:04:38,9.0,short_stop,Short stop (check),stop,R4,cam4,0.902,day_colour,visible,clear,checked by a person: Curling up,False,,stops/cam4_20260405_170429.jpg,,0.025,busy_still,nothing,1.0,0.0
+2026-04-05 17:07:41,2026-04-05 17:07:43,2.0,drinking,Drinking,frequency,R4,cam4,0.84,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 17:07:50,2026-04-05 17:07:58,7.5,short_stop,Short stop (check),stop,R4,cam4,0.875,day_colour,visible,clear,checked by a person: Active (other),False,,stops/cam4_20260405_170750.jpg,,0.031,busy_still,nothing,1.0,0.0
+2026-04-05 17:08:02,2026-04-05 17:08:11,8.5,short_stop,Short stop (check),stop,R4,cam4,0.849,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_170802.jpg,,0.002,short_stop,nothing,0.989,0.0
+2026-04-05 17:08:21,2026-04-05 17:10:59,158.5,feeding,Feeding,frequency,R3,cam3,0.672,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 17:11:08,2026-04-05 17:12:24,76.0,drinking,Drinking,frequency,R4,cam4,0.803,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 17:11:41,2026-04-05 17:11:57,15.5,short_stop,Short stop (check),stop,R4,cam4,0.889,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_171141.jpg,,0.009,busy_still,nothing,0.989,0.0
+2026-04-05 17:12:31,2026-04-05 17:12:58,27.0,short_stop,Short stop (check),stop,R4,cam4,0.885,day_colour,visible,clear,checked by a person: Lying down,False,,stops/cam4_20260405_171231.jpg,,0.208,busy_still,nothing,0.999,0.0
+2026-04-05 17:13:35,2026-04-05 17:13:46,11.5,short_stop,Short stop (check),stop,R4,cam4,0.906,day_colour,visible,clear,checked by a person: Curling up,False,,stops/cam4_20260405_171335.jpg,,0.061,busy_still,nothing,1.0,0.0
+2026-04-05 17:18:44,2026-04-05 17:18:54,10.5,short_stop,Short stop (check),stop,R4,cam4,0.904,day_colour,visible,clear,checked by a person: Curling up,False,,stops/cam4_20260405_171844.jpg,,0.038,busy_still,nothing,1.0,0.0
+2026-04-05 17:24:33,2026-04-05 17:24:44,11.0,short_stop,Short stop (check),stop,R4,cam4,0.895,day_colour,visible,clear,checked by a person: Curling up,False,,stops/cam4_20260405_172433.jpg,,0.029,busy_still,nothing,0.999,0.0
+2026-04-05 17:25:07,2026-04-05 17:25:15,8.0,short_stop,Short stop (check),stop,R3,cam3,0.733,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_172507.jpg,,0.02,busy_still,nothing,0.984,0.0
+2026-04-05 17:25:27,2026-04-05 17:26:22,55.5,drinking,Drinking,frequency,R4,cam4,0.765,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 17:26:19,2026-04-05 17:41:11,892.5,walking,Locomotion / Walking,duration,R4,cam4,0.717,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 17:26:27,2026-04-05 17:26:31,4.0,short_stop,Short stop (check),stop,R4,cam4,0.702,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_172627.jpg,,0.015,short_stop,nothing,0.958,0.0
+2026-04-05 17:26:37,2026-04-05 17:26:41,4.5,short_stop,Short stop (check),stop,R4,cam4,0.66,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_172637.jpg,,0.036,short_stop,nothing,0.996,0.0
+2026-04-05 17:26:44,2026-04-05 17:27:05,21.0,not_visible,Not visible,not_visible,R4,,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 17:27:10,2026-04-05 17:27:21,11.5,short_stop,Short stop (check),stop,R4,cam4,0.867,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_172710.jpg,,0.014,busy_still,nothing,1.0,0.0
+2026-04-05 17:27:41,2026-04-05 17:27:55,13.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.84,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_172741.jpg,,0.022,busy_still,nothing,0.999,0.0
+2026-04-05 17:28:40,2026-04-05 17:28:46,6.0,short_stop,Short stop (check),stop,R2,cam2,0.67,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_172840.jpg,,0.002,short_stop,nothing,0.999,0.0
+2026-04-05 17:29:10,2026-04-05 17:29:17,6.5,short_stop,Short stop (check),stop,R2,cam2,0.868,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_172910.jpg,,0.008,short_stop,nothing,0.978,0.0
+2026-04-05 17:29:27,2026-04-05 17:29:49,22.0,short_stop,Short stop (check),stop,R2,cam2,0.831,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_172927.jpg,,0.293,busy_still,nothing,0.994,0.0
+2026-04-05 17:30:02,2026-04-05 17:30:10,8.0,short_stop,Short stop (check),stop,R4,cam4,0.855,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_173002.jpg,,0.002,busy_still,nothing,0.992,0.0
+2026-04-05 17:30:04,2026-04-05 17:30:08,3.5,drinking,Drinking,frequency,R4,cam4,0.781,day_colour,visible,clear,,False,,,,,,,,
+2026-04-05 17:30:17,2026-04-05 17:30:46,29.5,short_stop,Short stop (check),stop,R4,cam4,0.861,day_colour,visible,clear,checked by a person: Grooming,False,,stops/cam4_20260405_173017.jpg,,0.031,busy_still,nothing,0.999,0.0
+2026-04-05 17:30:17,2026-04-05 17:31:22,65.5,grooming,Grooming,frequency,R4,cam4,0.861,day_colour,visible,clear,"checked by a person (one bout, several stops)",False,,stops/cam4_20260405_173017.jpg,,0.031,busy_still,nothing,0.999,0.0
+2026-04-05 17:30:51,2026-04-05 17:31:11,20.0,short_stop,Short stop (check),stop,R4,cam4,0.872,day_colour,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam4_20260405_173051.jpg,,0.011,busy_still,nothing,0.998,0.0
+2026-04-05 17:31:13,2026-04-05 17:31:22,9.0,short_stop,Short stop (check),stop,R4,cam4,0.879,day_colour,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam4_20260405_173113.jpg,,0.01,busy_still,nothing,0.996,0.0
+2026-04-05 17:31:44,2026-04-05 17:31:52,8.5,short_stop,Short stop (check),stop,R4,cam4,0.814,day_colour,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_173144.jpg,,0.012,short_stop,nothing,0.982,0.0
+2026-04-05 17:31:55,2026-04-05 17:32:12,17.0,short_stop,Short stop (check),stop,R4,cam4,0.877,day_colour,visible,clear,checked by a person: Curling up,False,,stops/cam4_20260405_173155.jpg,,0.01,busy_still,nothing,0.996,0.0
+2026-04-05 17:36:17,2026-04-05 17:36:27,9.5,short_stop,Short stop (check),stop,R4,cam4,0.891,day_colour,visible,clear,checked by a person: Curling up,False,,stops/cam4_20260405_173617.jpg,,0.04,busy_still,nothing,1.0,0.0
+2026-04-05 17:38:53,2026-04-05 17:40:21,88.0,feeding,Feeding,frequency,R3,cam3,0.789,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 17:40:58,2026-04-05 17:52:09,671.0,not_visible,Not visible,not_visible,R2,cam2,1.0,day_colour,out_of_view,clear,,False,,,,,,,,
+2026-04-05 17:52:27,2026-04-05 17:53:10,43.5,drinking,Drinking,frequency,R4,cam4,0.741,day_colour,visible,clear,checked: it was Drinking,False,,,,,,,,
+2026-04-05 17:53:16,2026-04-05 17:53:29,13.0,short_stop,Short stop (check),stop,R4,cam4,0.863,day_colour,visible,clear,checked by a person: Active (other),False,,stops/cam4_20260405_175316.jpg,,0.015,busy_still,nothing,0.997,0.0
+2026-04-05 17:53:59,2026-04-05 17:54:28,29.0,feeding,Feeding,frequency,R3,cam3,0.644,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 17:54:56,2026-04-05 18:10:57,961.5,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 18:11:02,2026-04-05 18:11:26,24.0,short_stop,Short stop (check),stop,R2,cam2,0.821,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_181102.jpg,,0.325,busy_still,nothing,1.0,0.0
+2026-04-05 18:11:47,2026-04-05 18:11:59,12.5,short_stop,Short stop (check),stop,R2,cam2,0.799,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_181147.jpg,,0.409,busy_still,nothing,1.0,0.0
+2026-04-05 18:12:47,2026-04-05 18:13:00,13.5,feeding,Feeding,frequency,R3,cam3,0.656,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 18:13:15,2026-04-05 18:30:01,1006.0,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 18:31:55,2026-04-05 18:32:00,5.0,feeding,Feeding,frequency,R3,cam3,0.612,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 18:32:15,2026-04-05 18:37:52,337.5,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 18:37:53,2026-04-05 18:37:57,4.0,short_stop,Short stop (check),stop,R2,cam2,0.848,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_183753.jpg,,0.007,short_stop,nothing,0.994,0.0
+2026-04-05 18:38:00,2026-04-05 18:38:08,7.5,short_stop,Short stop (check),stop,R2,cam2,0.85,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_183800.jpg,,0.148,short_stop,nothing,0.999,0.0
+2026-04-05 18:38:14,2026-04-05 18:41:46,211.5,lying_down,Lying down,duration,R2,cam2,0.732,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 18:39:47,2026-04-05 18:40:01,14.5,not_visible,Not visible,not_visible,R2,cam2,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 18:40:02,2026-04-05 18:40:06,4.0,short_stop,Short stop (check),stop,R2,cam2,0.702,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_184002.jpg,,0.012,short_stop,nothing,0.999,0.0
+2026-04-05 18:40:11,2026-04-05 18:40:23,11.5,short_stop,Short stop (check),stop,R2,cam2,0.779,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_184011.jpg,,0.114,short_stop,nothing,0.849,0.0
+2026-04-05 18:40:30,2026-04-05 18:40:35,5.5,short_stop,Short stop (check),stop,R3,cam3,0.793,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_184030.jpg,,0.046,short_stop,nothing,0.988,0.0
+2026-04-05 18:40:41,2026-04-05 18:41:33,51.5,short_stop,Short stop (check),stop,R2,cam2,0.84,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_184041.jpg,,0.006,short_stop,nothing,0.976,0.0
+2026-04-05 18:41:44,2026-04-05 19:01:57,1212.5,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 19:03:13,2026-04-05 19:03:18,5.0,short_stop,Short stop (check),stop,R2,cam2,0.855,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_190313.jpg,,0.042,short_stop,nothing,1.0,0.0
+2026-04-05 19:03:21,2026-04-05 19:05:21,120.0,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 19:05:43,2026-04-05 19:06:17,34.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 19:06:23,2026-04-05 19:07:12,49.0,feeding,Feeding,frequency,R3,cam3,0.76,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 19:07:41,2026-04-05 19:59:25,3104.0,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 19:59:35,2026-04-05 20:01:39,124.0,lying_down,Lying down,duration,R2,cam2,0.74,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 20:01:39,2026-04-05 20:03:00,80.5,curling_up,Curling up,duration,R2,cam2,0.732,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 20:02:13,2026-04-05 20:02:17,4.0,feeding,Feeding,frequency,R3,cam3,0.722,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 20:02:56,2026-04-05 20:57:33,3277.0,not_visible,Not visible,not_visible,R2,cam2,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 20:57:37,2026-04-05 20:57:41,4.0,short_stop,Short stop (check),stop,R2,cam2,0.818,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_205737.jpg,,0.501,short_stop,nothing,0.999,0.0
+2026-04-05 20:57:51,2026-04-05 20:58:16,25.0,drinking,Drinking,frequency,R4,cam4,0.425,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 20:58:26,2026-04-05 21:01:15,169.5,walking,Locomotion / Walking,duration,R4,cam4,0.618,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 20:58:28,2026-04-05 20:59:29,60.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 20:59:36,2026-04-05 20:59:57,21.5,not_visible,Not visible,not_visible,R4,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:00:01,2026-04-05 21:00:34,33.0,short_stop,Short stop (check),stop,R4,cam4,0.816,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_210001.jpg,,0.002,short_stop,nothing,0.965,0.0
+2026-04-05 21:00:37,2026-04-05 21:00:50,13.0,drinking,Drinking,frequency,R4,cam4,0.46,night_ir,visible,clear,checked: correct,False,,,,,,,,
+2026-04-05 21:00:41,2026-04-05 21:11:29,648.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:11:39,2026-04-05 21:11:43,4.0,feeding,Feeding,removed,R3,cam3,0.704,night_ir,visible,clear,removed by a person: it was Locomotion / Walking,False,,,,,,,,
+2026-04-05 21:11:47,2026-04-05 21:12:31,44.0,short_stop,Short stop (check),stop,R2,cam2,0.846,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_211147.jpg,,0.006,short_stop,nothing,0.997,0.0
+2026-04-05 21:12:38,2026-04-05 21:16:40,242.5,box_top_visit,On the sleeping box top (check),stop,R2,cam2,0.779,night_ir,visible,clear,checked by a person: Defecation,False,,stops/cam2_20260405_211238_box.jpg,,0.012,box_top,nothing,0.994,0.0003
+2026-04-05 21:12:38,2026-04-05 21:16:40,242.5,defecation,Defecation,frequency,R2,cam2,0.779,night_ir,visible,clear,checked by a person,False,,stops/cam2_20260405_211238_box.jpg,,0.012,box_top,nothing,0.994,0.0003
+2026-04-05 21:13:15,2026-04-05 21:13:46,30.5,not_visible,Not visible,not_visible,R2,cam2,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:15:51,2026-04-05 21:16:26,34.5,not_visible,Not visible,not_visible,R2,cam2,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:16:46,2026-04-05 21:17:19,33.5,short_stop,Short stop (check),stop,R2,cam2,0.852,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_211646.jpg,,0.401,short_stop,nothing,0.999,0.0
+2026-04-05 21:17:29,2026-04-05 21:17:44,14.5,short_stop,Short stop (check),stop,R4,cam4,0.821,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_211729.jpg,,0.001,short_stop,nothing,0.948,0.0
+2026-04-05 21:17:48,2026-04-05 21:18:12,24.0,drinking,Drinking,frequency,R4,cam4,0.752,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 21:18:23,2026-04-05 21:18:29,6.0,feeding,Feeding,frequency,R3,cam3,0.702,night_ir,visible,clear,,True,clips/211823_feeding_cam3.webm,,,,,,,
+2026-04-05 21:18:53,2026-04-05 21:19:34,40.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:20:13,2026-04-05 21:20:22,8.5,short_stop,Short stop (check),stop,R4,cam4,0.634,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_212013.jpg,,0.03,busy_still,nothing,0.997,0.0
+2026-04-05 21:20:25,2026-04-05 21:20:45,20.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:20:52,2026-04-05 21:21:11,19.0,drinking,Drinking,frequency,R4,cam4,0.311,night_ir,visible,clear,,True,clips/212052_drinking_cam4.webm,,,,,,,
+2026-04-05 21:20:54,2026-04-05 21:21:20,25.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:21:40,2026-04-05 21:22:15,35.0,feeding,Feeding,frequency,R3,cam3,0.681,night_ir,visible,clear,,True,clips/212140_feeding_cam3.webm,,,,,,,
+2026-04-05 21:22:41,2026-04-05 21:22:54,12.5,short_stop,Short stop (check),stop,R2,cam2,0.822,night_ir,visible,clear,checked by a person: Active (other),False,,stops/cam2_20260405_212241.jpg,,0.102,busy_still,nothing,1.0,0.0
+2026-04-05 21:22:59,2026-04-05 21:23:16,16.5,short_stop,Short stop (check),stop,R2,cam2,0.867,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_212259.jpg,,0.053,busy_still,nothing,1.0,0.0
+2026-04-05 21:23:18,2026-04-05 21:23:34,15.5,short_stop,Short stop (check),stop,R2,cam2,0.809,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_212318.jpg,,0.337,busy_still,nothing,0.998,0.0
+2026-04-05 21:24:00,2026-04-05 21:24:20,20.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:24:32,2026-04-05 21:24:44,12.0,feeding,Feeding,frequency,R3,cam3,0.745,night_ir,visible,clear,,True,clips/212432_feeding_cam3.webm,,,,,,,
+2026-04-05 21:24:59,2026-04-05 21:25:37,37.5,short_stop,Short stop (check),stop,R2,cam2,0.808,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_212459.jpg,,0.289,busy_still,nothing,0.999,0.0
+2026-04-05 21:25:41,2026-04-05 21:25:54,12.5,short_stop,Short stop (check),stop,R2,cam2,0.858,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_212541.jpg,,0.003,short_stop,nothing,0.998,0.0
+2026-04-05 21:26:23,2026-04-05 21:26:29,6.0,short_stop,Short stop (check),stop,R2,cam2,0.792,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_212623.jpg,,0.171,short_stop,nothing,0.999,0.0
+2026-04-05 21:26:29,2026-04-05 21:43:51,1042.0,walking,Locomotion / Walking,duration,R4,cam2,0.619,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 21:26:40,2026-04-05 21:26:52,12.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:27:03,2026-04-05 21:27:11,8.0,short_stop,Short stop (check),stop,R2,cam2,0.802,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_212703.jpg,,0.171,short_stop,nothing,0.999,0.0
+2026-04-05 21:27:43,2026-04-05 21:28:00,17.0,short_stop,Short stop (check),stop,R2,cam2,0.767,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_212743.jpg,,0.11,short_stop,nothing,0.999,0.0
+2026-04-05 21:28:39,2026-04-05 21:28:52,13.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:29:21,2026-04-05 21:29:28,7.0,short_stop,Short stop (check),stop,R4,cam4,0.728,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_212921.jpg,,0.011,busy_still,nothing,0.985,0.0
+2026-04-05 21:30:28,2026-04-05 21:30:31,3.0,drinking,Drinking,frequency,R4,cam4,0.756,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 21:30:38,2026-04-05 21:31:27,49.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:32:35,2026-04-05 21:32:45,10.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:32:49,2026-04-05 21:33:03,14.0,short_stop,Short stop (check),stop,R4,cam4,0.722,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_213249.jpg,,0.032,busy_still,nothing,0.896,0.0
+2026-04-05 21:33:14,2026-04-05 21:33:19,5.0,short_stop,Short stop (check),stop,R2,cam2,0.792,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_213314.jpg,,0.357,short_stop,nothing,0.999,0.0
+2026-04-05 21:33:22,2026-04-05 21:34:03,41.5,short_stop,Short stop (check),stop,R2,cam2,0.863,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_213322.jpg,,0.015,short_stop,nothing,0.999,0.0
+2026-04-05 21:34:09,2026-04-05 21:34:16,7.5,short_stop,Short stop (check),stop,R2,cam2,0.728,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_213409.jpg,,0.792,short_stop,nothing,0.999,0.0
+2026-04-05 21:34:27,2026-04-05 21:34:41,14.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:34:47,2026-04-05 21:35:07,20.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:35:19,2026-04-05 21:35:24,5.0,feeding,Feeding,frequency,R3,cam3,0.69,night_ir,visible,clear,,True,clips/213519_feeding_cam3.webm,,,,,,,
+2026-04-05 21:35:43,2026-04-05 21:36:24,41.0,short_stop,Short stop (check),stop,R2,cam2,0.884,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_213543.jpg,,0.025,short_stop,nothing,0.999,0.0
+2026-04-05 21:36:41,2026-04-05 21:36:44,3.0,feeding,Feeding,frequency,R3,cam3,0.622,night_ir,visible,clear,,True,clips/213641_feeding_cam3.webm,,,,,,,
+2026-04-05 21:37:07,2026-04-05 21:37:14,7.5,drinking,Drinking,frequency,R4,cam4,0.749,night_ir,visible,clear,,True,clips/213707_drinking_cam4.webm,,,,,,,
+2026-04-05 21:37:46,2026-04-05 21:37:59,13.0,feeding,Feeding,frequency,R3,cam3,0.755,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 21:38:14,2026-04-05 21:38:57,43.0,short_stop,Short stop (check),stop,R2,cam2,0.845,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_213814.jpg,,0.104,short_stop,nothing,0.999,0.0
+2026-04-05 21:39:38,2026-04-05 21:39:48,10.0,short_stop,Short stop (check),stop,R2,cam2,0.812,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_213938.jpg,,0.079,short_stop,nothing,0.988,0.0
+2026-04-05 21:39:58,2026-04-05 21:40:03,5.5,short_stop,Short stop (check),stop,R2,cam2,0.616,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_213958.jpg,,0.042,short_stop,nothing,0.987,0.0
+2026-04-05 21:40:41,2026-04-05 21:41:02,21.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:41:29,2026-04-05 21:41:43,13.5,short_stop,Short stop (check),stop,R1,cam1,0.805,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_214129.jpg,,0.014,short_stop,nothing,0.996,0.0
+2026-04-05 21:42:30,2026-04-05 21:43:07,36.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 21:43:14,2026-04-05 21:43:17,3.5,feeding,Feeding,frequency,R3,cam3,0.603,night_ir,visible,clear,,True,clips/214314_feeding_cam3.webm,,,,,,,
+2026-04-05 21:43:28,2026-04-05 21:43:44,16.5,short_stop,Short stop (check),stop,R2,cam2,0.808,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_214328.jpg,,0.078,busy_still,nothing,0.999,0.0
+2026-04-05 21:43:50,2026-04-05 22:29:25,2735.0,not_visible,Not visible,not_visible,R2,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 22:29:29,2026-04-05 22:29:33,4.0,short_stop,Short stop (check),stop,R2,cam2,0.842,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_222929.jpg,,0.183,short_stop,nothing,0.999,0.0
+2026-04-05 22:30:35,2026-04-05 22:30:47,12.0,not_visible,Not visible,not_visible,R3,cam3,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 22:31:06,2026-04-05 22:31:40,33.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 22:32:11,2026-04-05 22:32:18,7.0,feeding,Feeding,frequency,R3,cam3,0.746,night_ir,visible,clear,,True,clips/223211_feeding_cam3.webm,,,,,,,
+2026-04-05 22:32:31,2026-04-05 22:32:38,7.0,short_stop,Short stop (check),stop,R2,cam2,0.783,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_223231.jpg,,0.021,busy_still,nothing,0.978,0.0
+2026-04-05 22:32:39,2026-04-05 22:59:16,1597.5,not_visible,Not visible,not_visible,R2,cam2,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 22:59:22,2026-04-05 22:59:48,26.0,short_stop,Short stop (check),stop,R2,cam2,0.821,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_225922.jpg,,0.745,short_stop,nothing,0.998,0.0
+2026-04-05 22:59:53,2026-04-05 23:00:02,9.5,feeding,Feeding,frequency,R3,cam3,0.626,night_ir,visible,clear,,True,clips/225953_feeding_cam3.webm,,,,,,,
+2026-04-05 23:00:12,2026-04-05 23:00:48,36.0,drinking,Drinking,frequency,R4,cam4,0.701,night_ir,visible,clear,,True,clips/230012_drinking_cam4.webm,,,,,,,
+2026-04-05 23:02:03,2026-04-05 23:02:05,2.0,drinking,Drinking,frequency,R4,cam4,0.709,night_ir,visible,clear,,True,clips/230203_drinking_cam4.webm,,,,,,,
+2026-04-05 23:02:15,2026-04-05 23:02:57,42.0,doorway_pass,Passing between rooms,stop,R4,cam4,0.849,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_230215.jpg,,0.002,short_stop,nothing,0.999,0.0
+2026-04-05 23:03:23,2026-04-05 23:03:33,10.0,not_visible,Not visible,not_visible,R1,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:03:52,2026-04-05 23:04:00,8.0,short_stop,Short stop (check),stop,R3,cam3,0.836,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_230352.jpg,,0.043,short_stop,nothing,0.998,0.0
+2026-04-05 23:03:58,2026-04-05 23:05:02,63.5,walking,Locomotion / Walking,duration,R4,cam4,0.584,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 23:04:03,2026-04-05 23:04:14,11.0,not_visible,Not visible,not_visible,R3,cam3,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:04:59,2026-04-05 23:07:15,136.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:07:41,2026-04-05 23:07:57,16.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:08:24,2026-04-06 00:00:00,3096.0,walking,Locomotion / Walking,duration,R4,cam4,0.595,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 23:08:39,2026-04-05 23:09:07,28.0,feeding,Feeding,frequency,R3,cam3,0.622,night_ir,visible,clear,,True,clips/230839_feeding_cam3.webm,,,,,,,
+2026-04-05 23:09:26,2026-04-05 23:10:14,47.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:11:00,2026-04-05 23:11:10,10.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:11:29,2026-04-05 23:11:40,10.5,short_stop,Short stop (check),stop,R1,cam1,0.777,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam1_20260405_231129.jpg,,0.004,short_stop,nothing,0.989,0.0
+2026-04-05 23:12:34,2026-04-05 23:13:05,31.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:13:10,2026-04-05 23:13:14,4.0,short_stop,Short stop (check),stop,R4,cam4,0.828,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_231310.jpg,,0.003,short_stop,nothing,0.905,0.0
+2026-04-05 23:13:23,2026-04-05 23:13:29,6.5,short_stop,Short stop (check),stop,R3,cam3,0.81,night_ir,visible,clear,stood still a few seconds - what was it doing?,False,,stops/cam3_20260405_231323.jpg,,0.304,short_stop,nothing,0.665,0.0
+2026-04-05 23:13:33,2026-04-05 23:13:36,3.0,feeding,Feeding,frequency,R3,cam3,0.721,night_ir,visible,clear,,True,clips/231333_feeding_cam3.webm,,,,,,,
+2026-04-05 23:13:46,2026-04-05 23:14:09,22.5,not_visible,Not visible,not_visible,R2,cam2,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:14:58,2026-04-05 23:15:36,38.0,drinking,Drinking,frequency,R4,cam4,0.642,night_ir,visible,clear,,True,clips/231458_drinking_cam4.webm,,,,,,,
+2026-04-05 23:15:56,2026-04-05 23:16:14,18.0,short_stop,Short stop (check),stop,R4,cam4,0.742,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_231556.jpg,,0.002,busy_still,nothing,0.993,0.0
+2026-04-05 23:16:27,2026-04-05 23:16:38,11.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 23:16:43,2026-04-05 23:17:11,27.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:17:14,2026-04-05 23:17:26,11.5,short_stop,Short stop (check),stop,R4,cam4,0.789,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_231714.jpg,,0.003,short_stop,nothing,0.974,0.0
+2026-04-05 23:17:34,2026-04-05 23:17:38,3.5,feeding,Feeding,frequency,R3,cam3,0.715,night_ir,visible,clear,,True,clips/231734_feeding_cam3.webm,,,,,,,
+2026-04-05 23:18:08,2026-04-05 23:18:15,6.5,short_stop,Short stop (check),stop,R2,cam2,0.772,night_ir,visible,clear,stood still a few seconds - what was it doing?,False,,stops/cam2_20260405_231808.jpg,,0.857,short_stop,nothing,0.996,0.0
+2026-04-05 23:18:59,2026-04-05 23:19:16,16.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 23:22:13,2026-04-05 23:22:24,10.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 23:24:08,2026-04-05 23:24:17,9.0,short_stop,Short stop (check),stop,R3,cam3,0.796,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_232408.jpg,,0.167,short_stop,nothing,1.0,0.0
+2026-04-05 23:26:33,2026-04-05 23:26:38,5.0,short_stop,Short stop (check),stop,R2,cam2,0.794,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_232633.jpg,,0.425,short_stop,nothing,0.992,0.0
+2026-04-05 23:27:28,2026-04-05 23:27:34,6.0,drinking,Drinking,frequency,R4,cam4,0.711,night_ir,visible,clear,,True,clips/232728_drinking_cam4.webm,,,,,,,
+2026-04-05 23:27:47,2026-04-05 23:28:24,37.0,short_stop,Short stop (check),stop,R4,cam4,0.838,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_232747.jpg,,0.052,busy_still,nothing,0.912,0.0
+2026-04-05 23:28:27,2026-04-05 23:28:46,19.0,short_stop,Short stop (check),stop,R4,cam4,0.816,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_232827.jpg,,0.063,busy_still,nothing,0.794,0.0
+2026-04-05 23:28:47,2026-04-05 23:29:02,15.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:30:00,2026-04-05 23:30:34,33.5,drinking,Drinking,frequency,R4,cam4,0.735,night_ir,visible,clear,,True,clips/233000_drinking_cam4.webm,,,,,,,
+2026-04-05 23:30:39,2026-04-05 23:32:07,88.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:32:10,2026-04-05 23:32:14,4.0,doorway_pass,Passing between rooms,stop,R4,cam4,0.793,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_233210.jpg,,0.002,short_stop,nothing,0.997,0.0
+2026-04-05 23:32:18,2026-04-05 23:32:25,7.5,short_stop,Short stop (check),stop,R3,cam3,0.865,night_ir,visible,clear,stood still a few seconds - what was it doing?,False,,stops/cam3_20260405_233218.jpg,,0.129,short_stop,nothing,0.563,0.0
+2026-04-05 23:32:40,2026-04-05 23:32:50,9.5,feeding,Feeding,frequency,R3,cam3,0.774,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 23:32:59,2026-04-05 23:33:25,25.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:33:35,2026-04-05 23:34:03,28.0,short_stop,Short stop (check),stop,R2,cam2,0.787,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_233335.jpg,,0.144,busy_still,nothing,0.998,0.0
+2026-04-05 23:35:31,2026-04-05 23:35:42,11.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,,,,,,
+2026-04-05 23:35:56,2026-04-05 23:36:07,10.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:36:28,2026-04-05 23:36:45,16.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:37:10,2026-04-05 23:37:38,28.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:37:44,2026-04-05 23:37:50,6.0,feeding,Feeding,frequency,R3,cam3,0.704,night_ir,visible,clear,,True,clips/233744_feeding_cam3.webm,,,,,,,
+2026-04-05 23:37:53,2026-04-05 23:37:57,4.0,short_stop,Short stop (check),stop,R2,cam2,0.794,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_233753.jpg,,0.149,short_stop,nothing,0.997,0.0
+2026-04-05 23:37:59,2026-04-05 23:38:03,4.0,short_stop,Short stop (check),stop,R2,cam2,0.833,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_233759.jpg,,0.084,short_stop,nothing,1.0,0.0
+2026-04-05 23:42:16,2026-04-05 23:42:27,10.5,not_visible,Not visible,not_visible,R4,,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:43:29,2026-04-05 23:43:34,4.5,short_stop,Short stop (check),stop,R3,cam3,0.794,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_234329.jpg,,0.061,short_stop,nothing,0.999,0.0
+2026-04-05 23:43:42,2026-04-05 23:44:03,20.5,short_stop,Short stop (check),stop,R4,cam4,0.826,night_ir,visible,clear,checked by Claude (AI): Grooming,False,,stops/cam4_20260405_234342.jpg,,0.006,short_stop,grooming,0.971,0.0
+2026-04-05 23:43:42,2026-04-05 23:44:03,20.5,grooming,Grooming,frequency,R4,cam4,0.826,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_234342.jpg,,0.006,short_stop,grooming,0.971,0.0
+2026-04-05 23:44:20,2026-04-05 23:44:29,9.0,feeding,Feeding,frequency,R3,cam3,0.659,night_ir,visible,clear,,True,clips/234420_feeding_cam3.webm,,,,,,,
+2026-04-05 23:45:02,2026-04-05 23:45:08,6.5,short_stop,Short stop (check),stop,R3,cam3,0.774,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_234502.jpg,,0.011,short_stop,nothing,0.998,0.0
+2026-04-05 23:45:35,2026-04-05 23:45:49,13.5,doorway_pass,Passing between rooms,stop,R4,cam4,0.832,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_234535.jpg,,0.0,short_stop,nothing,0.991,0.0
+2026-04-05 23:45:51,2026-04-05 23:46:01,10.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:46:10,2026-04-05 23:46:18,8.5,short_stop,Short stop (check),stop,R2,cam2,0.811,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam2_20260405_234610.jpg,,0.007,short_stop,nothing,0.996,0.0
+2026-04-05 23:48:02,2026-04-05 23:48:09,7.0,short_stop,Short stop (check),stop,R3,cam3,0.836,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam3_20260405_234802.jpg,,0.022,short_stop,nothing,0.75,0.0
+2026-04-05 23:49:39,2026-04-05 23:49:44,4.5,short_stop,Short stop (check),stop,R4,cam4,0.861,night_ir,visible,clear,checked by Claude (AI),False,,stops/cam4_20260405_234939.jpg,,0.001,short_stop,nothing,0.989,0.0
+2026-04-05 23:52:00,2026-04-05 23:53:01,60.5,feeding,Feeding,frequency,R3,cam3,0.652,night_ir,visible,clear,,True,clips/235200_feeding_cam3.webm,,,,,,,
+2026-04-05 23:52:23,2026-04-05 23:52:27,4.0,drinking,Drinking,frequency,R4,cam4,0.706,night_ir,visible,clear,,True,clips/235223_drinking_cam4.webm,,,,,,,
+2026-04-05 23:53:06,2026-04-05 23:53:17,11.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:54:29,2026-04-05 23:54:41,11.5,feeding,Feeding,frequency,R3,cam3,0.73,night_ir,visible,clear,,True,clips/235429_feeding_cam3.webm,,,,,,,
+2026-04-05 23:57:22,2026-04-05 23:57:41,18.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:59:03,2026-04-05 23:59:14,11.0,not_visible,Not visible,not_visible,R1,cam1,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:59:23,2026-04-05 23:59:43,20.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,,,,,,
+2026-04-05 23:59:45,2026-04-05 23:59:58,13.5,short_stop,Short stop (check),stop,R4,cam4,0.752,night_ir,visible,clear,checked by a person: Grooming,False,,stops/cam4_20260405_235945.jpg,,0.044,busy_still,nothing,0.991,0.0
+2026-04-05 23:59:45,2026-04-05 23:59:58,13.5,grooming,Grooming,frequency,R4,cam4,0.752,night_ir,visible,clear,checked by a person,False,,stops/cam4_20260405_235945.jpg,,0.044,busy_still,nothing,0.991,0.0

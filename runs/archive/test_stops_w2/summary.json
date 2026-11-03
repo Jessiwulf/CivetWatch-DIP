@@ -1,0 +1,40 @@
+{
+  "start": "2026-04-05T23:10:00",
+  "end": "2026-04-05T23:35:00",
+  "observed_s": 1500.0,
+  "active_s": 1500.0,
+  "inactive_s": 0.0,
+  "active_frac": 1.0,
+  "unseen_s": 0.0,
+  "room_share": {
+    "Not seen": 0.189,
+    "R1": 0.079,
+    "R2": 0.157,
+    "R3": 0.18033333333333335,
+    "R4": 0.39466666666666667
+  },
+  "counts": {
+    "drinking": 6,
+    "feeding": 3
+  },
+  "rest_types_s": {},
+  "not_visible_s": 283.5,
+  "poor_image_frac": 0.0,
+  "night_frac": 1.0,
+  "to_review": 14,
+  "short_stops": 9,
+  "stops_flagged": 6,
+  "alerts": [
+    "14 event(s) need a keeper's check (incl. 6 possible toileting / marking / grooming)"
+  ],
+  "models": {
+    "detector": "from frames.csv",
+    "cameras": [
+      "cam1",
+      "cam2",
+      "cam3",
+      "cam4"
+    ]
+  },
+  "civet": "Civet #1"
+}

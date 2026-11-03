@@ -1,0 +1,31 @@
+start,stop,duration_s,behavior,behavior_name,category,room,camera,confidence,light,visibility,quality,note,needs_review,clip,grid,vlm_answer
+2026-04-05 23:10:00,2026-04-05 23:35:00,1500.0,walking,Locomotion / Walking,duration,R4,cam4,0.596,night_ir,visible,clear,,False,,,
+2026-04-05 23:10:00,2026-04-05 23:10:14,14.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,
+2026-04-05 23:10:09,2026-04-05 23:10:11,2.5,drinking,Drinking,frequency,R4,cam4,0.239,night_ir,visible,clear,,True,clips/231009_drinking_cam4.webm,,
+2026-04-05 23:11:00,2026-04-05 23:11:10,10.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,
+2026-04-05 23:11:29,2026-04-05 23:11:40,10.5,possible_toileting,Possible toileting (check),stop,R1,cam1,0.777,night_ir,visible,clear,model: toileting,True,clips/231129_possible_toileting_cam1.webm,stops/cam1_20260405_231129.jpg,"A) The civet is squatting or crouching with the hindquarters lowered and the tail lifted up, which is consistent with urination or defecation."
+2026-04-05 23:12:34,2026-04-05 23:13:05,31.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,
+2026-04-05 23:12:51,2026-04-05 23:12:55,4.0,drinking,Drinking,frequency,R4,cam4,0.15,night_ir,out_of_view,clear,,True,clips/231251_drinking_cam4.webm,,
+2026-04-05 23:13:10,2026-04-05 23:13:14,4.0,possible_marking,Possible marking (check),stop,R4,cam4,0.828,night_ir,visible,clear,model: marking,True,clips/231310_possible_marking_cam4.webm,stops/cam4_20260405_231310.jpg,B) rubbing or pressing its rear end against an object or wall (scent marking)
+2026-04-05 23:13:23,2026-04-05 23:13:29,6.5,short_stop,Short stop,stop,R3,cam3,0.81,night_ir,visible,clear,model: standing/sniffing,False,,stops/cam3_20260405_231323.jpg,"E) standing, sniffing, looking around or walking, with the tail hanging down"
+2026-04-05 23:13:33,2026-04-05 23:13:36,3.0,feeding,Feeding,frequency,R3,cam3,0.722,night_ir,visible,clear,,True,clips/231333_feeding_cam3.webm,,
+2026-04-05 23:13:46,2026-04-05 23:14:09,22.5,not_visible,Not visible,not_visible,R2,cam2,1.0,night_ir,out_of_view,clear,,False,,,
+2026-04-05 23:14:26,2026-04-05 23:15:36,70.0,drinking,Drinking,frequency,R4,cam4,0.652,night_ir,visible,clear,,True,clips/231426_drinking_cam4.webm,,
+2026-04-05 23:16:27,2026-04-05 23:16:38,11.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,
+2026-04-05 23:16:43,2026-04-05 23:17:11,27.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,
+2026-04-05 23:17:14,2026-04-05 23:17:26,11.5,short_stop,Short stop,stop,R4,cam4,0.789,night_ir,visible,clear,model: standing/sniffing,False,,stops/cam4_20260405_231714.jpg,"E) standing, sniffing, looking around or walking, with the tail hanging down"
+2026-04-05 23:17:34,2026-04-05 23:17:38,3.5,feeding,Feeding,frequency,R3,cam3,0.715,night_ir,visible,clear,,True,clips/231734_feeding_cam3.webm,,
+2026-04-05 23:18:08,2026-04-05 23:18:15,6.5,possible_toileting,Possible toileting (check),stop,R2,cam2,0.772,night_ir,visible,clear,model: toileting,True,clips/231808_possible_toileting_cam2.webm,stops/cam2_20260405_231808.jpg,"A) The civet is squatting or crouching with the hindquarters lowered and the tail lifted up, which is consistent with urination or defecation."
+2026-04-05 23:18:59,2026-04-05 23:19:16,16.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,
+2026-04-05 23:22:13,2026-04-05 23:22:24,10.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,visible,clear,,False,,,
+2026-04-05 23:24:08,2026-04-05 23:24:17,9.0,short_stop,Short stop,stop,R3,cam3,0.796,night_ir,visible,clear,model: standing/sniffing,False,,stops/cam3_20260405_232408.jpg,"E) standing, sniffing, looking around or walking, with the tail hanging down"
+2026-04-05 23:26:33,2026-04-05 23:26:38,5.0,possible_toileting,Possible toileting (check),stop,R2,cam2,0.794,night_ir,visible,clear,model: toileting,True,clips/232633_possible_toileting_cam2.webm,stops/cam2_20260405_232633.jpg,"A) The civet is squatting or crouching with the hindquarters lowered and the tail lifted up, which is consistent with urination or defecation."
+2026-04-05 23:27:27,2026-04-05 23:27:45,17.5,drinking,Drinking,frequency,R4,cam4,0.688,night_ir,visible,clear,,True,clips/232727_drinking_cam4.webm,,
+2026-04-05 23:28:47,2026-04-05 23:29:02,15.0,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,
+2026-04-05 23:30:00,2026-04-05 23:30:34,33.5,drinking,Drinking,frequency,R4,cam4,0.733,night_ir,visible,clear,,True,clips/233000_drinking_cam4.webm,,
+2026-04-05 23:30:39,2026-04-05 23:32:07,88.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,
+2026-04-05 23:32:10,2026-04-05 23:32:14,4.0,possible_toileting,Possible toileting (check),stop,R4,cam4,0.793,night_ir,visible,clear,model: toileting,True,clips/233210_possible_toileting_cam4.webm,stops/cam4_20260405_233210.jpg,"A) The civet is squatting or crouching with the hindquarters lowered and the tail lifted up, which is consistent with urination or defecation."
+2026-04-05 23:32:18,2026-04-05 23:32:25,7.5,possible_toileting,Possible toileting (check),stop,R3,cam3,0.865,night_ir,visible,clear,model: toileting,True,clips/233218_possible_toileting_cam3.webm,stops/cam3_20260405_233218.jpg,"A) The civet appears to be squatting or crouching with the hindquarters lowered and the tail lifted up, which is consistent with urination or defecation."
+2026-04-05 23:32:40,2026-04-05 23:32:50,9.5,feeding,Feeding,frequency,R3,cam3,0.774,night_ir,visible,clear,,False,clips/233240_feeding_cam3.webm,,
+2026-04-05 23:32:59,2026-04-05 23:33:25,25.5,not_visible,Not visible,not_visible,R4,cam4,1.0,night_ir,out_of_view,clear,,False,,,
+2026-04-05 23:33:11,2026-04-05 23:33:13,2.0,drinking,Drinking,frequency,R4,cam4,0.245,night_ir,out_of_view,clear,,True,clips/233311_drinking_cam4.webm,,

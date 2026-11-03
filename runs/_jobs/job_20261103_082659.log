@@ -1,0 +1,3 @@
+$ C:\Python313\python.exe -m civetwatch --profile laptop --config data/2026-04-05/config.yaml spotcheck --run runs/2026-04-05 --manifest data/2026-04-05/manifest.yaml
+[resources] profile=laptop  threads=4  priority=below_normal  duty=70%  GPU pause at 78 C
+120 moments ready. Check them in the dashboard (Spot check link), or fill runs/2026-04-05\spotcheck\answers.json

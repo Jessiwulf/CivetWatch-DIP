@@ -1,0 +1,602 @@
+{
+ "0": {
+  "room": "none",
+  "label": "cant_tell",
+  "checker": ""
+ },
+ "1": {
+  "room": "R3",
+  "label": "feeding",
+  "checker": ""
+ },
+ "2": {
+  "room": "R2",
+  "label": "territorial_marking",
+  "checker": ""
+ },
+ "3": {
+  "room": "R2",
+  "label": "walking",
+  "checker": ""
+ },
+ "4": {
+  "room": "R1",
+  "label": "walking",
+  "checker": ""
+ },
+ "5": {
+  "room": "R3",
+  "label": "walking",
+  "checker": ""
+ },
+ "6": {
+  "room": "R2",
+  "label": "walking",
+  "checker": ""
+ },
+ "7": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "8": {
+  "room": "R1",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "9": {
+  "room": "R4",
+  "label": "grooming",
+  "checker": "Claude (AI)"
+ },
+ "10": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "11": {
+  "room": "R4",
+  "label": "drinking",
+  "checker": "Claude (AI)"
+ },
+ "12": {
+  "room": "R4",
+  "label": "drinking",
+  "checker": "Claude (AI)"
+ },
+ "13": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "14": {
+  "room": "R3",
+  "label": "grooming",
+  "checker": "Claude (AI)"
+ },
+ "15": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "16": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "17": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "18": {
+  "room": "R3",
+  "label": "grooming",
+  "checker": "Claude (AI)"
+ },
+ "19": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "20": {
+  "room": "R3",
+  "label": "active_other",
+  "checker": "Claude (AI)"
+ },
+ "21": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "22": {
+  "room": "R1",
+  "label": "cant_tell",
+  "checker": "Claude (AI)"
+ },
+ "23": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "24": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "25": {
+  "room": "R1",
+  "label": "active_other",
+  "checker": "Claude (AI)"
+ },
+ "26": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "27": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "28": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "29": {
+  "room": "R4",
+  "label": "cant_tell",
+  "checker": "Claude (AI)"
+ },
+ "30": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "31": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "32": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "33": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "34": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "35": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "36": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "37": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "38": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "39": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "40": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "41": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "42": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "43": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "44": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "45": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "46": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "47": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "48": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "49": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "50": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "51": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "52": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "53": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "54": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "55": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "56": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "57": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "58": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "59": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "60": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "61": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "62": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "63": {
+  "room": "R2",
+  "label": "active_other",
+  "checker": "Claude (AI)"
+ },
+ "64": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "65": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "66": {
+  "room": "R4",
+  "label": "active_other",
+  "checker": "Claude (AI)"
+ },
+ "67": {
+  "room": "R3",
+  "label": "active_other",
+  "checker": "Claude (AI)"
+ },
+ "68": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "69": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "70": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "71": {
+  "room": "R4",
+  "label": "lying_down",
+  "checker": "Claude (AI)"
+ },
+ "72": {
+  "room": "R4",
+  "label": "lying_down",
+  "checker": "Claude (AI)"
+ },
+ "73": {
+  "room": "R4",
+  "label": "lying_down",
+  "checker": "Claude (AI)"
+ },
+ "74": {
+  "room": "R4",
+  "label": "lying_down",
+  "checker": "Claude (AI)"
+ },
+ "75": {
+  "room": "R4",
+  "label": "lying_down",
+  "checker": "Claude (AI)"
+ },
+ "76": {
+  "room": "R4",
+  "label": "lying_down",
+  "checker": "Claude (AI)"
+ },
+ "77": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "78": {
+  "room": "R4",
+  "label": "lying_down",
+  "checker": "Claude (AI)"
+ },
+ "79": {
+  "room": "R4",
+  "label": "lying_down",
+  "checker": "Claude (AI)"
+ },
+ "80": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "81": {
+  "room": "R4",
+  "label": "grooming",
+  "checker": "Claude (AI)"
+ },
+ "82": {
+  "room": "R4",
+  "label": "active_other",
+  "checker": "Claude (AI)"
+ },
+ "83": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "84": {
+  "room": "R2",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "85": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "86": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "87": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "88": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "89": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "90": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "91": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "92": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "93": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "94": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "95": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "96": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "97": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "98": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "99": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "100": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "101": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "102": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "103": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "104": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "105": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "106": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "107": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "108": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "109": {
+  "room": "none",
+  "label": "",
+  "checker": "Claude (AI)"
+ },
+ "110": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "111": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "112": {
+  "room": "R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "113": {
+  "room": "R3+R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "114": {
+  "room": "R2+R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "115": {
+  "room": "R3+R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "116": {
+  "room": "R3",
+  "label": "active_other",
+  "checker": "Claude (AI)"
+ },
+ "117": {
+  "room": "R3",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "118": {
+  "room": "R1",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ },
+ "119": {
+  "room": "R3+R4",
+  "label": "walking",
+  "checker": "Claude (AI)"
+ }
+}

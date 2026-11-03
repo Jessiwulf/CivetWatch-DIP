@@ -1,0 +1,49 @@
+{
+  "start": "2026-04-05T00:00:00",
+  "end": "2026-04-06T00:00:00",
+  "observed_s": 86400.0,
+  "active_s": 15843.0,
+  "inactive_s": 2929.5,
+  "active_frac": 0.8439472632840591,
+  "unseen_s": 67627.5,
+  "room_share": {
+    "Not seen": 0.7609259259259259,
+    "R1": 0.017586805555555557,
+    "R2": 0.05696759259259259,
+    "R3": 0.05648148148148148,
+    "R4": 0.10803819444444444
+  },
+  "counts": {
+    "feeding": 44,
+    "drinking": 37,
+    "grooming": 16,
+    "defecation": 3,
+    "urination": 2,
+    "territorial_marking": 1
+  },
+  "rest_types_s": {
+    "lying_down": 2708.0,
+    "curling_up": 221.5
+  },
+  "not_visible_s": 65744.0,
+  "poor_image_frac": 0.0,
+  "night_frac": 0.5968287037037037,
+  "to_review": 23,
+  "busy_stops": 72,
+  "short_stops": 263,
+  "stops_flagged": 232,
+  "alerts": [
+    "Civet not visible for 1096 min in total, please check the cameras",
+    "69 thing(s) to check by a person: 0 in Behavior check and 69 unsure events"
+  ],
+  "models": {
+    "detector": "from frames.csv",
+    "cameras": [
+      "cam1",
+      "cam2",
+      "cam3",
+      "cam4"
+    ]
+  },
+  "civet": "Civet #1"
+}

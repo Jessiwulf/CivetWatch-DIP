@@ -1,0 +1,41 @@
+{
+  "start": "2026-04-05T00:00:00",
+  "end": "2026-04-05T05:50:00",
+  "observed_s": 21000.0,
+  "active_s": 8161.0,
+  "inactive_s": 0.0,
+  "active_frac": 1.0,
+  "unseen_s": 12839.0,
+  "room_share": {
+    "Not seen": 0.7342857142857143,
+    "R1": 0.04590476190476191,
+    "R2": 0.0818095238095238,
+    "R3": 0.06152380952380952,
+    "R4": 0.07647619047619048
+  },
+  "counts": {
+    "feeding": 32,
+    "drinking": 25
+  },
+  "rest_types_s": {},
+  "not_visible_s": 15420.0,
+  "poor_image_frac": 0.0,
+  "night_frac": 1.0,
+  "to_review": 57,
+  "alerts": [
+    "Civet not visible for 257 min in total, please check the cameras",
+    "57 event(s) need a keeper's check"
+  ],
+  "models": {
+    "detector": "yolo",
+    "pose": "none",
+    "sequence_model": "heuristic",
+    "cameras": [
+      "cam1",
+      "cam2",
+      "cam3",
+      "cam4"
+    ]
+  },
+  "civet": "Civet #1"
+}

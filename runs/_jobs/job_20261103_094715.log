@@ -1,0 +1,18 @@
+$ C:\Python313\python.exe -m civetwatch --profile laptop --config data/2026-04-05/config.yaml report --frames runs/2026-04-05/frames.csv --manifest data/2026-04-05/manifest.yaml --out runs/2026-04-05
+[resources] profile=laptop  threads=4  priority=below_normal  duty=70%  GPU pause at 78 C
+D:\CMU_Work\Image processing\DIP_CV-main\CivetWatch\civetwatch\__main__.py:48: DtypeWarning: Columns (1,2,4,6,9,47) have mixed types. Specify dtype option on import or set low_memory=False.
+  frames = pd.read_csv(a.frames, parse_dates=["t"])
+5 visit(s) to the sleeping box top
+Scoring 263 stops for the Behavior check list (order_model, stop_model) ...
+D:\CMU_Work\Image processing\DIP_CV-main\CivetWatch\civetwatch\stops.py:453: UserWarning: Discarding nonzero nanoseconds in conversion.
+  f, _ = rd.read_at((stop["start"] + (stop["stop"] - stop["start"]) * ((q + 0.5) / n)).to_pydatetime())
+263 short stops: 232 to check in the dashboard (Quick check), 31 were the civet passing between rooms
+8 checked stop(s) and 0 auto-accepted stop(s) added to the counts
+4 counted event(s) changed or removed by a person's check
+Cutting labelled clips ...
+
+Done. 24 h 00 m observed | active 4 h 24 m (84%) | inactive 0 h 49 m
+Counts: Feeding 54, Drinking 42, Grooming 8
+  ! Civet not visible for 1096 min in total, please check the cameras
+  ! 89 thing(s) to check by a person: 20 in Behavior check and 69 unsure events
+Outputs in runs/2026-04-05: events.csv, frames.csv, sheet.xlsx, charts.png, summary.json, clips/

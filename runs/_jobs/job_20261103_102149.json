@@ -1,0 +1,24 @@
+{
+ "id": "job_20261103_102149",
+ "kind": "report",
+ "title": "Rebuild report 2026-04-05",
+ "day": "2026-04-05",
+ "args": [
+  "--config",
+  "data/2026-04-05/config.yaml",
+  "report",
+  "--frames",
+  "runs/2026-04-05/frames.csv",
+  "--manifest",
+  "data/2026-04-05/manifest.yaml",
+  "--out",
+  "runs/2026-04-05"
+ ],
+ "pid": 17656,
+ "started": 1793676109.285663,
+ "state": "done",
+ "log": "D:\\CMU_Work\\Image processing\\DIP_CV-main\\CivetWatch\\runs\\_jobs\\job_20261103_102149.log",
+ "status_file": "D:\\CMU_Work\\Image processing\\DIP_CV-main\\CivetWatch\\runs\\_jobs\\job_20261103_102149.status.json",
+ "estimate_s": 361.641,
+ "ended": 1793676561.5730672
+}

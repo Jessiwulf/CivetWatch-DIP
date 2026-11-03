@@ -1,0 +1,1 @@
+{"detector": "yolo", "pose": "vitpose+ (AP-10K, ready-made)", "sequence_model": "heuristic", "cameras": ["cam1", "cam2", "cam3", "cam4"]}
