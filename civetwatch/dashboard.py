@@ -171,6 +171,7 @@ The videos stay where they are; a small 2-frames-per-second copy is made in <cod
 <p><b>Select all videos</b><br><input type="file" id="upall" multiple accept="video/*"> <span class="m" id="upallnote"></span></p>
 <p class="m">Files named <code>A01_...</code> through <code>A04_...</code> are placed into the matching camera automatically. You can still add files to a camera manually below.</p>
 {% for i in range(1,5) %}<p>Camera {{ i }} <input type="file" id="up{{ i }}" multiple accept="video/*"> <span class="m" id="up{{ i }}note"></span></p>{% endfor %}
+<div id="uplist" class="panel" style="display:none;margin:12px 0 0"><b>Files ready to upload</b><div id="uplistitems"></div></div>
 <div id="upbox" style="display:none"><div class="progress"><i id="upbar" style="width:0"></i></div><p class="m" id="uptxt"></p></div>
 </div>
 <p><button id="checkbtn" onclick="check()">Check footage and estimate time</button></p>
@@ -204,12 +205,18 @@ function assignUploads(files){autoUploadFiles={};let unknown=[],dates=[];
   const counts={};for(const date of dates)counts[date]=(counts[date]||0)+1;const date=Object.keys(counts).sort((a,b)=>counts[b]-counts[a])[0];
   if(date&&!document.getElementById('date').dataset.touched)document.getElementById('date').value=date;
   const added=Object.values(autoUploadFiles).reduce((n,files)=>n+files.length,0),note=document.getElementById('upallnote');
-  note.textContent=`${added} file${added===1?'':'s'} assigned automatically${date?' · date '+date:''}${unknown.length?' · '+unknown.length+' file(s) need a camera name':''}.`;}
+  note.textContent=`${added} file${added===1?'':'s'} assigned automatically${date?' · date '+date:''}${unknown.length?' · '+unknown.length+' file(s) need a camera name':''}.`;renderUploadList();}
 document.getElementById('upall').addEventListener('change',e=>assignUploads(e.target.files));
-async function upload(){const date=document.getElementById('date').value;let files=[],seen=new Set();
+function pendingUploads(){let files=[],seen=new Set();
   const add=(cam,f)=>{const key=`${f.name}:${f.size}:${f.lastModified}`;if(!seen.has(key)){seen.add(key);files.push([cam,f]);}};
   for(const [cam,items] of Object.entries(autoUploadFiles))for(const f of items)add(cam,f);
   for(let i=1;i<=4;i++)for(const f of document.getElementById('up'+i).files)add('cam'+i,f);
+  return files;}
+function renderUploadList(){const files=pendingUploads(),box=document.getElementById('uplist'),items=document.getElementById('uplistitems');items.replaceChildren();box.style.display=files.length?'':'none';
+  const groups={};for(const [cam,file] of files)(groups[cam]??=[]).push(file.name);
+  for(const cam of Object.keys(groups).sort()){const title=document.createElement('p'),label=document.createElement('b');title.style.margin='8px 0 2px';label.textContent=cam.replace('cam','Camera ');title.append(label);items.append(title);const list=document.createElement('ul');list.style.margin='0';for(const name of groups[cam].sort()){const item=document.createElement('li');item.textContent=name;list.append(item);}items.append(list);}}
+for(let i=1;i<=4;i++)document.getElementById('up'+i).addEventListener('change',renderUploadList);
+async function upload(){const date=document.getElementById('date').value,files=pendingUploads();
   if(!files.length){alert('Pick the video files first');return null;}
   const total=files.reduce((a,x)=>a+x[1].size,0);let sent=0;document.getElementById('upbox').style.display='';
   for(const [cam,f] of files){await new Promise((ok,bad)=>{const x=new XMLHttpRequest();

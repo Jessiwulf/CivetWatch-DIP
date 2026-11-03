@@ -27,6 +27,8 @@ def test_flat_folder_metadata_is_grouped_by_camera(tmp_path):
     assert b'id="autofill"' in page.data
     assert b'id="upall"' in page.data
     assert b'assignUploads' in page.data
+    assert b'id="uplist"' in page.data
+    assert b'renderUploadList' in page.data
     assert response.status_code == 200
     assert response.get_json() == {
         "date": "2026-04-05",
