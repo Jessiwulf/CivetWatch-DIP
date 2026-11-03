@@ -127,6 +127,23 @@ stops:                        # short stops = possible toileting / marking / gro
                               # stop is shown to a person instead (dashboard -> Quick check)
   vlm_model: Qwen/Qwen2.5-VL-3B-Instruct   # only used with vlm: true (7.5 GB download)
   order_model: models/civet_behavior_cls.pt  # sorts Quick check, likely toileting first (trained on public MammalNet clips)
+  stop_model: models/civet_stop_cls.pt  # trained on YOUR Behavior check answers (civetwatch train-behavior);
+                              # when it exists it gives each stop a guess and sorts the check list by it
+  auto_accept: null           # e.g. 0.9: stops the stop_model is this sure about are counted without a person
+                              # (marked 'auto' in the sheet). Leave null until train-behavior shows good test results
+  box_visits:                 # every visit to a 'box_top' zone (top of the sleeping box, cam2) is checked
+    enabled: true
+    overlap: 0.3              # share of the civet's box inside the zone
+    min_s: 3
+    gap_s: 3                  # out of the zone this briefly = same visit
+    before_after_s: 4         # 'before' / 'after' pictures: just after the civet left the box top
+    clear_search_s: 600       # ... looking this far for a moment without the civet on it
+  busy:                       # 'busy while staying in place' (box still, body moving): grooming while sitting / lying
+    enabled: true
+    motion_min: 0.04          # motion inside the box (lying still is below 0.04)
+    min_s: 6
+    gap_s: 2
+    max_per_day: 80           # keep the busiest ones
 
 postprocess:
   min_state_s: 60             # 1-minute rule: Inactive/Active only switch after >= 1 min

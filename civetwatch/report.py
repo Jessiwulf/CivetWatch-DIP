@@ -20,7 +20,8 @@ BOLD = Font(bold=True, size=9)
 SMALL = Font(size=9)
 
 EVENT_COLUMNS = ["start", "stop", "duration_s", "behavior", "category", "room", "camera", "confidence",
-                 "light", "visibility", "quality", "note", "needs_review", "clip", "grid", "vlm_answer", "toilet_score"]
+                 "light", "visibility", "quality", "note", "needs_review", "clip", "grid", "vlm_answer", "toilet_score",
+                 "kind", "guess", "guess_prob", "box_change"]
 
 
 def write_csvs(result, out_dir):
@@ -192,7 +193,7 @@ def _summary_rows(s):
         ("Night (IR) frames", f"{s['night_frac']:.0%}"),
         ("Poor-image frames", f"{s['poor_image_frac']:.1%}"),
         ("Events to review", s["to_review"]),
-        ("Short stops (possible toileting / marking / grooming)", s.get("short_stops", 0)),
+        ("Moments to check (short stops, box-top visits)", s.get("short_stops", 0)),
         ("  flagged by the model for checking", s.get("stops_flagged", 0)),
     ]
     rows += [(f"Time in {room}", f"{share:.0%}") for room, share in s["room_share"].items()]

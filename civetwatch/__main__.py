@@ -40,7 +40,9 @@ def cmd_run(a, cfg):
 def cmd_report(a, cfg):
     """Re-run post-processing on frames.csv (fast: try new thresholds without re-analysing video)."""
     import pandas as pd
-    from . import pipeline
+    from . import jobs, pipeline
+    jobs.phase("Reading the saved frames", 0.0, 1.0)
+    jobs.status(None, 0.05)
     from .config import load_manifest
     from .features import FEATURES
     frames = pd.read_csv(a.frames, parse_dates=["t"])
@@ -55,7 +57,10 @@ def cmd_report(a, cfg):
         print("Re-applying zones and behavior rules ...")
         frames = pipeline.relabel(frames, cfg, cams)
     info = {"detector": "from frames.csv", "cameras": sorted(c for c in frames["camera"].unique() if c)}
+    jobs.status("Cleaning and counting behaviors", 0.15)
+    t_rep = __import__("time").time()
     pipeline.report(frames, cams, info, cfg, _out(a.out), clips=bool(cams) and not a.no_clips)
+    jobs.save_speed(report_s=__import__("time").time() - t_rep + 30)
 
 
 def cmd_prepare(a, cfg):
@@ -165,6 +170,25 @@ def cmd_spotcheck_report(a, cfg):
         pd.set_option("display.width", 200)
         print()
         print(confusion.to_string())
+
+
+def cmd_process(a, cfg):
+    from . import process
+    folders = {f"cam{i}": getattr(a, f"cam{i}") for i in range(1, 9) if getattr(a, f"cam{i}", None)}
+    if a.source and not folders:
+        import glob
+        for d in sorted(glob.glob(os.path.join(a.source, "*"))):
+            digits = "".join(ch for ch in os.path.basename(d) if ch.isdigit())
+            if os.path.isdir(d) and digits:
+                folders[f"cam{int(digits)}"] = d
+    if not folders:
+        raise SystemExit("Give --cam1 ... --cam4 folders, or --source with 'camera 1' ... 'camera 4' sub-folders")
+    process.process_day(a.date, folders, cfg, out=a.out)
+
+
+def cmd_train_behavior(a, cfg):
+    from .behavior_train import train_behavior
+    train_behavior(a.run, a.manifest, cfg, epochs=a.epochs, use_all=a.use_all)
 
 
 def cmd_dashboard(a, cfg):
@@ -278,6 +302,21 @@ def main(argv=None):
     s = sub.add_parser("spotcheck-report", help="accuracy of CivetWatch against the spot-check answers")
     s.add_argument("--run", required=True)
     s.set_defaults(fn=cmd_spotcheck_report)
+
+    s = sub.add_parser("process", help="new day: prepare the videos, write the manifest, analyse, report")
+    s.add_argument("--date", required=True, help="YYYY-MM-DD")
+    s.add_argument("--source", help="folder with 'camera 1' ... 'camera 4' sub-folders")
+    for i in range(1, 9):
+        s.add_argument(f"--cam{i}", help=f"folder with camera {i}'s videos")
+    s.add_argument("--out", help="default runs/<date>")
+    s.set_defaults(fn=cmd_process)
+
+    s = sub.add_parser("train-behavior", help="train the grooming / marking / toileting model on your Behavior check answers")
+    s.add_argument("--run", required=True)
+    s.add_argument("--manifest", required=True)
+    s.add_argument("--epochs", type=int, default=30)
+    s.add_argument("--use-all", action="store_true", help="final model on all checked stops (no test score)")
+    s.set_defaults(fn=cmd_train_behavior)
 
     s = sub.add_parser("dashboard", help="keeper review dashboard in the browser")
     s.add_argument("--runs", help="folder containing run folders (default runs/)")

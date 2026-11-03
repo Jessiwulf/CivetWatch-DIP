@@ -116,7 +116,11 @@ def score(run_dir, answers_name="answers.json"):
         if not a:
             continue
         p = it["pred"]
+        # the civet can show in two cameras at once (R2 / R3 look into each other): the checker ticks every
+        # room it is seen in, stored as "R2+R3"; the app is right when its room is one of them
+        rooms = set(str(a["room"]).split("+"))
         rows.append({"id": it["id"], "t": it["t"], "true_room": a["room"], "pred_room": p["room"],
+                     "room_ok": p["room"] in rooms,
                      "true_label": a["label"], "pred_label": p["label"], "pred_state": p["state"]})
     df = pd.DataFrame(rows)
     if df.empty:
@@ -127,7 +131,7 @@ def score(run_dir, answers_name="answers.json"):
     summary["found when in view"] = (df.loc[present, "pred_room"] != NO_CIVET).mean() if present.any() else np.nan
     summary["no false civet when out of view"] = (df.loc[~present, "pred_room"] == NO_CIVET).mean() if (~present).any() else np.nan
     both = present & (df["pred_room"] != NO_CIVET)
-    summary["right room"] = (df.loc[both, "true_room"] == df.loc[both, "pred_room"]).mean() if both.any() else np.nan
+    summary["right room"] = df.loc[both, "room_ok"].mean() if both.any() else np.nan
     # 2 state and behavior, where the checker could tell
     judged = both & (df["true_label"] != CANT_TELL)
     st = df.loc[judged]

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "civetwatch",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "civetwatch", "dashboard", "--port", "8050"],
+      "port": 8050
+    }
+  ]
+}

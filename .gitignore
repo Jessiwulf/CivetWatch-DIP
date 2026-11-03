@@ -1,6 +1,3 @@
-runs/
-models/*.pt
-datasets/*/
 __pycache__/
 *.pyc
 data/

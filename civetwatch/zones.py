@@ -24,6 +24,7 @@ ZONE_COLORS = {          # BGR, matching the deck
     "food": (40, 140, 240),
     "water": (230, 180, 40),
     "latrine": (60, 60, 160),
+    "box_top": (40, 140, 220),
     "ignore": (90, 90, 90),
 }
 DYNAMIC_HOLD_S = 600     # keep the last tray position while the civet's head hides it

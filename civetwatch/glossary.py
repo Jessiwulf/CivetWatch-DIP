@@ -18,8 +18,10 @@ GLOSSARY = [
                                             "on a log, wall, door frame or fence."),
     ("Urine", "Urinating."),
     ("Feces", "Defecating."),
-    ("Short stop", "The civet walked, stood still for 4-60 seconds, then walked on. Grooming, marking and toileting "
-                   "happen in these stops, so every one is shown to a person to check (dashboard > Quick check)."),
+    ("Short stop", "The civet walked, stood still for 4-60 seconds, then walked on. Grooming, territorial marking, "
+                   "urination and defecation happen in these stops, so every one is shown to a person (Behavior check)."),
+    ("On the sleeping box top", "Every visit of the civet to the top of the sleeping box (camera 2), where it "
+     "usually marks, urinates and defecates. Shown first in Behavior check with a before / after picture of the box top."),
     ("Passing between rooms", "A short stop in a doorway while the civet moves to the next room - not checked."),
     ("Please check / hollow dot", "The app is not sure. Look at the clip or pictures and press Correct, "
                                   "Not this behavior, or pick what it really was."),

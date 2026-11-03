@@ -19,6 +19,7 @@ from .config import load_manifest
 from .detect import MotionDetector, build_detector, build_pose
 from .features import FEATURES, FeatureExtractor, at_edge, body_point_zones, zone_features
 from .fusion import CivetFusion
+from .jobs import status
 from .postprocess import postprocess
 from .resources import Throttle, settings as resource_settings
 from .report import write_csvs, write_sheet, write_summary
@@ -160,6 +161,8 @@ def analyse(manifest_path, cfg, start=None, end=None, progress=True):
         prev_gray = grays
         rows.append(row)
         throttle.tick()
+        if n % 120 == 0:
+            status(None, None, sub=(n + 1) / max(1, n_total), rate=(n + 1) / max(1e-6, time.time() - tick))
         if progress and (n % 600 == 0 or n == n_total - 1):
             rate = (n + 1) / max(1e-6, time.time() - tick)
             eta = (n_total - n - 1) / max(rate, 1e-6)
@@ -246,8 +249,11 @@ def run(manifest_path, cfg, out_dir, start=None, end=None, clips=True, progress=
     os.makedirs(parts_dir, exist_ok=True)
     pieces, info, cams = [], None, load_manifest(manifest_path)["cameras"]
     a = t0
+    n_chunks = max(1, int(np.ceil((t1 - t0) / step)))
     while a < t1:
         b = min(a + step, t1)
+        k = len(pieces)
+        status(f"Analysing {a:%H:%M}-{b:%H:%M} (part {k + 1} of {n_chunks})", k / n_chunks, weight=1 / n_chunks)
         path = os.path.join(parts_dir, f"frames_{a:%Y%m%d_%H%M%S}_{b:%H%M%S}.pkl")
         if os.path.exists(path) and not fresh:
             if progress:
@@ -261,6 +267,7 @@ def run(manifest_path, cfg, out_dir, start=None, end=None, clips=True, progress=
                 json.dump(info, f)
         pieces.append(df)
         a = b
+    status("Analysis done", 1.0)
     if info is None:
         with open(os.path.join(parts_dir, "info.json"), encoding="utf-8") as f:
             info = json.load(f)
@@ -273,7 +280,10 @@ def report(frames, cams, info, cfg, out_dir, clips=True, progress=True):
     os.makedirs(out_dir, exist_ok=True)
     result = postprocess(frames, cfg)
     if cfg.get("stops", {}).get("enabled") and cams and len(frames):
+        status("Finding short stops and making pictures", None)
         add_stop_events(result, cams, cfg, out_dir, progress)
+    apply_event_review(result, out_dir, cfg, progress)
+    status("Writing the sheet and charts", None)
     events = result["events"]
     events["clip"] = ""
     if clips and cams and len(events):
@@ -293,6 +303,11 @@ def report(frames, cams, info, cfg, out_dir, clips=True, progress=True):
     return result
 
 
+def _is_stop_decision(v):
+    b = v.get("behavior", "")
+    return v.get("category", "stop" if b.startswith("possible_") or b in ("short_stop", "doorway_pass") else "event") == "stop"
+
+
 def apply_stop_review(ev, out_dir, cfg):
     """Stops a person marked Correct (or 'It was <behavior>') in the dashboard
     become counted frequency events; checked stops are no longer flagged."""
@@ -301,7 +316,7 @@ def apply_stop_review(ev, out_dir, cfg):
         return ev, pd.DataFrame()
     with open(path, encoding="utf-8") as f:
         review = json.load(f)
-    by_event = {(v["start"][:19], v["camera"]): v for v in review.values() if v.get("start")}
+    by_event = {(v["start"][:19], v["camera"]): v for v in review.values() if v.get("start") and _is_stop_decision(v)}
     ev = ev.copy()
     rows = []
     for i, e in ev.iterrows():
@@ -320,44 +335,154 @@ def apply_stop_review(ev, out_dir, cfg):
         if label == E.URINATION and dec.get("label") in (None, "toileting") and \
                 e["duration_s"] >= cfg["behavior"].get("defecation_min_s", 5):
             label = E.DEFECATION
+        who = dec.get("checker") or "a person"
         if label:
-            ev.at[i, "note"] = f"checked: {E.DISPLAY[label]}"
+            ev.at[i, "note"] = f"checked by {who}: {E.DISPLAY[label]}"
             rows.append({**e.to_dict(), "behavior": label, "category": "frequency", "needs_review": False,
-                         "note": "checked by a person"})
+                         "note": f"checked by {who}"})
+        elif dec.get("label") in E.DISPLAY and dec.get("label") != "cant_see":
+            ev.at[i, "note"] = f"checked by {who}: {E.DISPLAY[dec['label']]}"      # resting / sitting: not counted
+        elif dec.get("checker"):
+            ev.at[i, "note"] = f"checked by {who}"
+    return ev, merge_bouts(pd.DataFrame(rows), cfg)
+
+
+def merge_bouts(rows, cfg):
+    """One grooming / marking bout seen as several stops (the civet pauses, moves a
+    little, goes on) is one occurrence in the sheet: confirmed events of the same
+    behavior less than behavior.bout_gap_s apart are merged."""
+    if not len(rows):
+        return rows
+    gaps = cfg["behavior"].get("bout_gap_s", {})
+    gaps = gaps if isinstance(gaps, dict) else {}
+    rows = rows.sort_values("start").reset_index(drop=True)
+    keep, last = [], {}
+    for r in rows.to_dict("records"):
+        p = last.get(r["behavior"])
+        gap = pd.Timedelta(seconds=gaps.get(r["behavior"], 60))
+        if p is not None and r["start"] - p["stop"] <= gap:
+            p["stop"] = max(p["stop"], r["stop"])
+            p["duration_s"] = (p["stop"] - p["start"]).total_seconds()
+            p["note"] = p["note"] + " (one bout, several stops)" if "one bout" not in p["note"] else p["note"]
+            continue
+        keep.append(r)
+        last[r["behavior"]] = r
+    return pd.DataFrame(keep)
+
+
+GUESS_LABEL = {"urination": E.URINATION, "defecation": E.DEFECATION, "territorial_marking": E.MARKING,
+               "grooming": E.GROOMING}
+
+
+def auto_accept_stops(ev, cfg):
+    """Stops the own-footage model (train-behavior) is very sure about are
+    counted without a person when stops.auto_accept is set. Off by default."""
+    thr = cfg["stops"].get("auto_accept")
+    if not thr or not len(ev) or "guess" not in ev:
+        return ev, pd.DataFrame()
+    ev, rows = ev.copy(), []
+    for i, e in ev.iterrows():
+        label = GUESS_LABEL.get(e.get("guess"))
+        if not label or not e["needs_review"] or float(e.get("guess_prob") or 0) < thr:
+            continue
+        ev.at[i, "note"] = f"auto: {E.DISPLAY[label]} ({float(e['guess_prob']):.0%} sure), not checked"
+        rows.append({**e.to_dict(), "behavior": label, "category": "frequency", "needs_review": False,
+                     "note": f"auto (model {float(e['guess_prob']):.0%} sure), not checked by a person"})
     return ev, pd.DataFrame(rows)
+
+
+def _recount(result, cfg):
+    events, s = result["events"], result["summary"]
+    from .postprocess import hourly_counts
+    freq = events[events["category"] == "frequency"]
+    result["hourly"] = hourly_counts(events, s["start"], s["end"], cfg["report"]["sheet_start_hour"])
+    s["counts"] = {k: int(v) for k, v in freq["behavior"].value_counts().items()}
+
+
+def apply_event_review(result, out_dir, cfg, progress=True):
+    """Answers given in the dashboard for feeding / drinking / other events:
+    Correct keeps it, 'Not this behavior' removes it from the counts, 'It was ...'
+    changes it. Stops are handled in apply_stop_review."""
+    path = os.path.join(out_dir, "review.json")
+    ev = result["events"]
+    if not len(ev) or not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        review = json.load(f)
+    by_event = {(v["start"][:19], v["camera"]): v for v in review.values() if v.get("start") and not _is_stop_decision(v)}
+    changed = 0
+    for i, e in ev.iterrows():
+        if e["category"] in ("stop", "not_visible"):
+            continue
+        dec = by_event.get((f"{e['start']:%Y-%m-%d %H:%M:%S}", e["camera"]))
+        if not dec or dec.get("behavior") not in (None, e["behavior"]):
+            continue
+        ev.at[i, "needs_review"] = False
+        if dec["status"] == "confirmed":
+            ev.at[i, "note"] = "checked: correct"
+            continue
+        label = dec.get("label") if dec["status"] == "corrected" else None
+        if e["category"] == "frequency":
+            changed += 1
+            if label in E.FREQUENCY_LABELS:
+                ev.at[i, "behavior"], ev.at[i, "note"] = label, f"checked: it was {E.DISPLAY[label]}"
+            else:
+                ev.at[i, "category"] = "removed"
+                ev.at[i, "note"] = f"removed by a person: it was {E.DISPLAY.get(label, 'something else')}"                     if label else "removed by a person: not this behavior"
+        else:
+            ev.at[i, "note"] = f"checked: it was {E.DISPLAY.get(label, label)}" if label else "checked: not this behavior"
+    result["events"] = ev
+    _recount(result, cfg)
+    s = result["summary"]
+    s["to_review"] = int(ev["needs_review"].astype(bool).sum())
+    if progress and changed:
+        print(f"{changed} counted event(s) changed or removed by a person's check")
 
 
 def add_stop_events(result, cams, cfg, out_dir, progress=True):
     """Short stops (possible toileting / marking / grooming) -> events, flagged
     for checking by the vision-language pre-filter. Not counted in the sheet."""
-    from .stops import find_stops, judge_stops, mark_doorway, score_stops, stop_events
+    from .stops import find_box_visits, find_stops, judge_stops, mark_doorway, score_stops, stop_events
     stops = mark_doorway(find_stops(result["frames"], cfg), result["frames"], cams, cfg)
+    visits = find_box_visits(result["frames"], cams, cfg)
+    if len(visits):
+        # a box-top visit replaces the short stops inside it (one thing to check, not three)
+        if len(stops):
+            inside = [any(v.camera == st.camera and v.start < st.stop and st.start < v.stop for v in visits.itertuples())
+                      for st in stops.itertuples()]
+            stops = stops[[not x for x in inside]]
+        visits["doorway"] = False
+        stops = pd.concat([stops, visits], ignore_index=True).sort_values("start").reset_index(drop=True)
+        if progress:
+            print(f"{len(visits)} visit(s) to the sleeping box top")
     if not len(stops):
         return
     stops = judge_stops(stops, cams, cfg, out_dir, progress)
     stops = score_stops(stops, cams, cfg, progress)
     ev = stop_events(stops)
     flagged = int(ev["needs_review"].sum()) if len(ev) else 0
+    s_ = result["summary"]
+    s_["busy_stops"] = int((ev.get("kind", pd.Series(dtype=str)) == "busy_still").sum()) if len(ev) else 0
     if progress:
         print(f"{len(stops)} short stops: {flagged} to check in the dashboard (Quick check), "
               f"{len(stops) - flagged} were the civet passing between rooms")
     ev, confirmed = apply_stop_review(ev, out_dir, cfg)
-    events = pd.concat([result["events"], ev, confirmed], ignore_index=True).sort_values("start").reset_index(drop=True)
+    ev, auto = auto_accept_stops(ev, cfg)
+    events = pd.concat([result["events"], ev, confirmed, auto], ignore_index=True).sort_values("start").reset_index(drop=True)
     result["events"] = events
     s = result["summary"]
-    if len(confirmed):
-        from .postprocess import hourly_counts
-        freq = events[events["category"] == "frequency"]
-        result["hourly"] = hourly_counts(events, s["start"], s["end"], cfg["report"]["sheet_start_hour"])
-        s["counts"] = {k: int(v) for k, v in freq["behavior"].value_counts().items()}
+    if len(confirmed) or len(auto):
+        _recount(result, cfg)
         if progress:
-            print(f"{len(confirmed)} checked stop(s) added to the counts")
+            print(f"{len(confirmed)} checked stop(s) and {len(auto)} auto-accepted stop(s) added to the counts")
     s["to_review"] = int(events["needs_review"].astype(bool).sum())
     s["short_stops"], s["stops_flagged"] = len(stops), flagged
     result["alerts"] = [a for a in result["alerts"] if "to check by a person" not in a]
     if s["to_review"]:
-        result["alerts"].append(f"{s['to_review']} thing(s) to check by a person: {flagged} short stops "
-                                f"(dashboard > Quick check) and {s['to_review'] - flagged} unsure events")
+        nr = events["needs_review"].astype(bool)
+        n_stops = int((nr & (events["category"] == "stop")).sum())
+        result["alerts"].append(f"{s['to_review']} thing(s) to check by a person: {n_stops} in Behavior check "
+                                f"and {s['to_review'] - n_stops} unsure events")
 
 
 def print_summary(result, out_dir):

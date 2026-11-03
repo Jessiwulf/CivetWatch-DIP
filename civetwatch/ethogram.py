@@ -52,11 +52,12 @@ DISPLAY = {
     URINATION: "Urination",
     DEFECATION: "Defecation",
     UNKNOWN: "Poor image",
-    "possible_toileting": "Possible toileting (check)",
+    "possible_toileting": "Possible urination / defecation (check)",
     "possible_marking": "Possible marking (check)",
     "possible_grooming": "Possible grooming (check)",
     "short_stop": "Short stop (check)",
     "doorway_pass": "Passing between rooms",
+    "box_top_visit": "On the sleeping box top (check)",
     INACTIVE: "Inactive",
     ACTIVE: "Active",
 }
@@ -89,7 +90,8 @@ SKELETON = [
 ]
 
 # --- Zones drawn once per camera (the tray zone also follows the detector) -
-ZONE_TYPES = ["rest_box", "door", "fence", "log", "tyre", "food", "water", "latrine", "ignore"]
+ZONE_TYPES = ["rest_box", "door", "fence", "log", "tyre", "food", "water", "latrine", "box_top", "ignore"]
+# 'box_top' = top of the sleeping box (cam2): where the civet usually marks, urinates and defecates
 # 'latrine' = spot where the civet urinates / defecates (draw it where the keepers clean droppings)
 MARKING_OBJECTS = ["log", "door", "rest_box"]      # things a civet rubs its scent gland on
 # 'ignore' = burned-in clock / camera name, lens dirt, swaying plants: masked out of motion detection

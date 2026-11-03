@@ -12,7 +12,7 @@ from .overlay import draw_zones
 from .video import resize_width
 from .zones import load_zones, save_zones
 
-KEYS = {"b": "rest_box", "d": "door", "f": "fence", "l": "log", "t": "tyre", "o": "food", "w": "water", "x": "latrine", "i": "ignore"}
+KEYS = {"b": "rest_box", "d": "door", "f": "fence", "l": "log", "t": "tyre", "o": "food", "w": "water", "x": "latrine", "s": "box_top", "i": "ignore"}
 
 
 def first_frame(video, at_s=5.0):

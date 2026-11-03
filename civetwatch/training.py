@@ -165,8 +165,11 @@ def _train_yolo(base, data, epochs, imgsz, out_name, device=None, resume=False, 
     project = os.path.join(PROJECT_ROOT, "runs", "training")
     last = os.path.join(project, out_name, "weights", "last.pt")
     throttle = Throttle(check_every_s=0)
+    on_epoch = kw.pop("on_epoch", None)
 
     def rest(trainer):
+        if on_epoch:
+            on_epoch(trainer.epoch + 1)
         if r["train_epoch_pause_s"]:
             time.sleep(r["train_epoch_pause_s"])
         throttle.wait_if_hot()

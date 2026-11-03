@@ -30,6 +30,31 @@ stretching out, sleeping in the box, hiding out of view), runs the full
 pipeline on it and scores the result against the script. The dashboard then
 opens at http://127.0.0.1:8050.
 
+## Using the app (zoo staff)
+
+```bash
+python -m civetwatch dashboard
+```
+
+Open http://127.0.0.1:8050. Everything is done from there, no commands needed:
+
+- **+ Process new footage**: type the footage folder (with `camera 1` ... `camera 4`
+  inside) or upload the files, press *Check footage* to see what was found, the
+  **time estimate** and the disk space needed, then *Start processing*. The job runs
+  in the background at low priority (laptop profile); the top bar and the job page
+  show the progress, the step and the time left. *Stop* is safe: finished hours are
+  kept and *Start again* continues. Zones and settings are copied from the last day.
+- Per day: **Overview** (totals + what to do), **Observation sheet** (the sheet.xlsx
+  tables in the page), **Charts**, **Events & video** (click any event to watch it
+  from the camera, zoomed on the civet, and correct it), **Behavior check**
+  (urine / feces / marking / grooming, with video, keys 1-5, 0, 9),
+  **Spot check** (accuracy), **Files**.
+- **Rebuild report** and **Train behavior model** are buttons on the Overview.
+  Corrections of feeding / drinking are applied to the counts when the report is rebuilt.
+
+The same steps as commands: `civetwatch process --date 2026-04-05 --source "<footage folder>"`,
+`civetwatch report ...`, `civetwatch train-behavior --run runs/<day> --manifest data/<day>/manifest.yaml`.
+
 ## Running a real observation day
 
 1. **Split and sample the recordings** (optional but much faster): each NVR
@@ -105,11 +130,11 @@ downloaded once on the first run and then works offline. It adds about 20 %
 to the run time.
 
 The body points are used for feeding / drinking (nose at the dish or basin).
-They are **not** used to count grooming, marking or toileting: seen from
+They are **not** used to count grooming, marking, urination or defecation: seen from
 above, the model often mixes up the civet's head and tail (tested on 5 Apr
 2026), so those rules are off (`behavior.pose_rare_rules: false`).
 
-## Toileting, marking and grooming: short stops + check
+## Territorial marking, grooming, urination, defecation: candidates + check
 
 There are no latrine zones and no labelled examples, so these rare behaviors
 are found in two steps (`civetwatch/stops.py`):
@@ -119,18 +144,38 @@ are found in two steps (`civetwatch/stops.py`):
    camera with walking within 8 s before and after, away from the food and
    water (stillness = how far the box centre moves over 2 s; arriving from or
    leaving to another room also counts as walking). Tested on 40 busy minutes
-   of 5 Apr 2026: 20 stops, all 3 toileting moments found by eye among them.
+   of 5 Apr 2026: 20 stops, all 3 urination / defecation moments found by eye among them.
    Estimated about 160 stops for the whole day (`stops.count_room_changes:
    false` gives about 65, but misses stops right after the civet enters a room).
 2. **Quick check by a person.** Stops in a doorway with another camera seeing
    the civet within 4 s are the civet passing between rooms and are skipped
    (5 Apr 2026: 30 of 191, none of the real events). Every other stop is shown
-   in the dashboard's **Quick check** page as 4 pictures; press a key:
-   `1` urinating, `2` defecating, `3` toileting (not sure which - 5 s or more
-   counts as defecating), `4` scent marking, `5` grooming, `0` nothing special.
-   Space enlarges, arrows move. About 160 stops a day, 2 s each.
+   in the app's **Behavior check** page as a looping video of the stop (zoomed on the civet) plus 4 pictures; press a key:
+   `1` urination, `2` defecation, `3` territorial marking, `4` grooming, `0` nothing special, `9` can't see.
+   Space plays / pauses, Z zooms, arrows move.
 3. **Rebuild the report** (`civetwatch report ...`) and the answers are counted
    in the sheet and charts. Nothing else is counted as these four behaviors.
+4. **Busy while staying in place.** Grooming often happens while the civet sits or
+   lies, longer than a short stop: its box does not move but the body does
+   (motion inside the box >= 0.04, at least 6 s). The 80 busiest such moments of the
+   day are added to the Behavior check as "moving in place" (`stops.busy`).
+5. **Train on your answers** (`civetwatch train-behavior`, or the Overview button).
+   Every checked stop gives up to 30 civet crops; a YOLO26n-cls (started from the
+   MammalNet model) learns urination / defecation / territorial marking / grooming / nothing. Stops, not
+   frames, are split into train and test, so the printed test score is on stops the
+   model never saw (`runs/<day>/behavior_model.json`). The next report puts the
+   model's guess on every stop and sorts the check list by it. It counts stops by
+   itself only when `stops.auto_accept` is set (e.g. 0.9) - leave it off until the
+   test score is good; one day gives few examples of each behavior.
+6. **Sleeping box top (cam2).** The civet usually marks, urinates and defecates on top
+   of the sleeping box. A `box_top` zone (drawn with key `s` in `civetwatch zones`;
+   5 Apr 2026: the top edge of cam2, x 22-58 %, y 0-20 %) makes every session there
+   its own item, listed first in the Behavior check - no stillness or walking rule,
+   because there the civet is half out of the picture and its posture is often hidden.
+   Each item has a **before / after** picture of the box top, taken when the civet is
+   seen somewhere else (not just "not detected"), with what changed marked red, and a
+   change score used for sorting: new droppings or a wet patch show up even when the
+   civet's rear end is out of view. 5 Apr 2026: 5 sessions (2-4 min each).
 
 We tried to let software decide instead, and measured each attempt against our
 own check of every stop on 5 Apr 2026 - none was good enough:
